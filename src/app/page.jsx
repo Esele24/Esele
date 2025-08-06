@@ -15,17 +15,23 @@ import { Doctrine } from "@/COMPONENTS/DOCTRINE/doctrine"
 import { App } from "@/COMPONENTS/APP/app"
 import { MemberCard } from "@/COMPONENTS/MEMBERCARD/membercard";
 import { Traveljournal } from "@/COMPONENTS/traveljournal";
+import { Counter } from "@/COMPONENTS/ass1"
+import { PasswordToggle } from "@/COMPONENTS/ass2"
+import { TodoApp } from "@/COMPONENTS/ass3"
 export default function Home({}){
   return(
     <>
+    <Counter/>
+    <PasswordToggle/>
+    <TodoApp/>
     {/* <Navbar/>
     <Back/>
     <About/>
     <Events/>
     <Leadership/>
     <Doctrine/> */}
-      <Applications/>
-      <Traveljournal/>
+      {/* <Applications/>
+      <Traveljournal/> */}
     {/* <Traveljournal/> */}
     {/* <App/> */}
     {/* const root = ReactDOM.createRoot(document.getElementById('root'));
