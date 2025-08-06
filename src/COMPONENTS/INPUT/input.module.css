@@ -1,0 +1,11 @@
+.input{
+    border: none;
+    outline: none;
+    background-color: rgb(50,50,80);
+    color: black;
+    padding: 20px;
+    margin-left: 15px;
+    width: 100px;
+    border-bottom: 2px solid var(--brand-color);
+    display:flex;
+} 

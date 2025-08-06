@@ -1,0 +1,140 @@
+.upcoming{
+    background-color: whitesmoke;
+    width: auto;
+    height:180vh;
+    margin-top:-41px;
+}
+.begin{
+    /* background-color: blue; */
+    height: 48vh;
+    margin-bottom:10px;
+    align-items: center;
+    justify-content: center;
+    width:60vw;
+    margin-left:265px;
+    margin-top:21px;
+}
+.top{
+    /* background-color: yellow; */
+    height: 20vh;
+    width:40vw;
+    margin-left:140px;
+    margin-top:46px;
+    font-size: 3rem;
+}
+.txt{
+    font-size: 3rem;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin-left:138px;
+    color:black;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+.fell{
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin-left:183px;
+    color:  rgb(100, 30, 167);
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    margin-top:90px;
+}
+.mission{
+    /* background-color: yellow; */
+    height: 15vh;
+    width:60vw;
+    margin-left:265px;
+    margin-top:-110px;
+    font-size: 1.3rem;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+}
+.text{
+    color:  rgb(100, 30, 167);
+}
+.mid{
+    color:  rgb(100, 30, 167);
+}
+.weekly{
+    /* background-color: whitesmoke; */
+    height:120vh;
+    width:95vw;
+    margin-top:20px;
+    margin-left:30px;
+    margin-bottom: 20px;
+    display: flex;
+    gap:15px;
+}
+.week{
+    margin-top:-430px;
+    margin-left:30px;
+    margin-bottom: 20px;
+    display: flex;
+    gap:15px;
+}
+.loop{
+    background-color: white;
+    height:54vh;
+    width: 46vw;
+    margin-left: 7px;
+    border-radius:8px;
+    margin-top:20px;
+}
+.loop:hover{
+    transform: scale(1.01, 1.01);
+    box-shadow: 1px 2px 5px 1px rgb(125, 84, 163);
+    margin-top: 11px;
+}
+.topp{
+    background-color:blue;
+    height:1.5vh;
+    width:43vw;
+    border-radius:10px;
+    margin-left:20px;
+    margin-top:16px;
+}
+.toppp{
+    background-color:purple;
+    height:1.5vh;
+    width:43vw;
+    border-radius:10px;
+    margin-left:20px;
+    margin-top:16px;
+}
+.topppp{
+    background-color:orangered;
+    height:1.5vh;
+    width:43vw;
+    border-radius:10px;
+    margin-left:20px;
+    margin-top:16px;
+}
+.toppppp{
+    background-color:green;
+    height:1.5vh;
+    width:43vw;
+    border-radius:10px;
+    margin-left:20px;
+    margin-top:16px;
+}
+.meeting{
+    margin-left:20px;
+    margin-top:14px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size:1.3rem;
+    font-weight: bold;
+}
+.first{
+    margin-top:10px;
+    display: flex;
+    gap:8px;
+}
+.first label{
+    color:navy;
+    margin-top:5.5px;
+}
+.footer label{
+    color: navy;
+    font-size:1.1rem;
+}

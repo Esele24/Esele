@@ -1,0 +1,198 @@
+.about{
+    background-color:rgb(234, 234, 243);
+    /* background-color: red; */
+    height:210vh;
+    width:auto;
+    margin-top: 479px;
+}
+.begin{
+    /* background-color: blue; */
+    height: 48vh;
+    margin-bottom:10px;
+    align-items: center;
+    justify-content: center;
+    width:60vw;
+    margin-left:265px;
+    margin-top:21px;
+}
+.top{
+    /* background-color: yellow; */
+    height: 20vh;
+    width:40vw;
+    margin-left:140px;
+    margin-top:20px;
+    font-size: 3rem;
+}
+.txt{
+    font-size: 3rem;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin-left:138px;
+    color:black;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+.fell{
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin-left:138px;
+    color:  rgb(100, 30, 167);
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+.mission{
+    /* background-color: yellow; */
+    height: 15vh;
+    width:60vw;
+    margin-left:30px;
+    margin-top:20px;
+    font-size: 1.3rem;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+}
+.text{
+    color:  rgb(100, 30, 167);
+}
+.mid{
+    color:  rgb(100, 30, 167);
+}
+.end{
+    color:  rgb(100, 30, 167);
+}
+.objectives{
+    /* background-color: blue; */
+    height:69vh;
+    width:94vw;
+    margin-left:33px;
+    display: flex;
+    gap:9px;
+}
+.stack{
+    height:49vh;
+    width:21vw;
+    background-color: purple;
+    background-color: white;
+    margin-left:20px;
+    margin-top:22px; 
+    border-radius:10px;
+}
+.circle{
+    background-color: aqua;
+    background-color: rgb(100, 30, 167);
+    height:12vh;
+    width:6vw;
+    margin-top:22px;
+    margin-left:100px;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin-bottom:10px;
+}
+.triangle{
+    background-color: rgb(100, 30, 167);
+    height:12vh;
+    width:6vw;
+    margin-top:22px;
+    margin-left:100px;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin-bottom:22px;
+}
+.square{
+    background-color: rgb(100, 30, 167);
+    height:12vh;
+    width:6vw;
+    margin-top:22px;
+    margin-left:100px;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin-bottom:26px;
+}
+.cube{
+    background-color: rgb(100, 30, 167);
+    height:12vh;
+    width:6vw;
+    margin-top:22px;
+    margin-left:100px;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin-bottom:22px;
+}
+.poi{
+    margin-top:30px;
+    margin-left:96px;
+    font-size:1.2rem;
+}
+.poin{
+    margin-top:30px;
+    margin-left:80px;
+    font-size:1.2rem;
+}
+.point{
+    font-size:0.9rem;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    color: rgb(100, 30, 167);
+}
+.stack:hover{
+    transform: scale(1.01, 1.01);
+    box-shadow: 1px 2px 5px 1px rgb(125, 84, 163);
+    margin-top: 11px;
+}
+.midd{
+    background-color:  rgb(100, 30, 167);
+    height: 35vh;
+    width:60vw;
+    margin-left:260px;
+    border-radius:9px;
+    margin-top:-30px;
+}
+.type{
+    /* background-color: blue; */
+    margin-top:30px;
+    margin-left:250px;
+    width:20vw;
+    align-items: center;
+    justify-content: center;
+}
+.type label{
+    color:white;
+    text-align: center;
+    font-size:2rem;
+    justify-content: center;
+    align-items: center;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+.types{
+    /* background-color: blue; */
+    margin-top:10px;
+    margin-left:40px;
+    width:55vw;
+    align-items: center;
+    justify-content: center;
+    height:10vh;
+    margin-top:30px;
+}
+.types label{
+    color:white;
+    text-align: center;
+    font-size:1.1rem;
+    justify-content: center;
+    align-items: center;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+.pop{
+    background-color:  rgb(100, 30, 167);
+    height: 35vh;
+    width:60vw;
+    margin-left:260px;
+    border-radius:9px;
+}

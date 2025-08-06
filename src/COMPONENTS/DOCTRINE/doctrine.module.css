@@ -1,0 +1,101 @@
+.doctrine{
+    background-color: whitesmoke;
+    width:auto;
+    height:200vh;
+}
+.begin{
+    /* background-color: blue; */
+    height: 48vh;
+    margin-bottom:10px;
+    align-items: center;
+    justify-content: center;
+    width:60vw;
+    margin-left:265px;
+    margin-top:21px;
+}
+.top{
+    /* background-color: yellow; */
+    height: 20vh;
+    width:40vw;
+    margin-left:140px;
+    margin-top:46px;
+    font-size: 3rem;
+}
+.txt{
+    font-size: 3rem;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin-left:193px;
+    color:black;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+.fell{
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin-left:145px;
+    color:  rgb(100, 30, 167);
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    margin-top:90px;
+}
+.mission{
+    /* background-color: yellow; */
+    height: 15vh;
+    width:60vw;
+    margin-left:265px;
+    margin-top:-110px;
+    font-size: 1.3rem;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+}
+.text{
+    color:  rgb(100, 30, 167);
+}
+.mid{
+    color:  rgb(100, 30, 167);
+}
+.end{
+    color:  rgb(100, 30, 167);
+}
+.type{
+    /* background-color: blue; */
+    margin-top:30px;
+    margin-left:170px;
+    width:20vw;
+    align-items: center;
+    justify-content: center;
+}
+.type label{
+    color:white;
+    text-align: center;
+    font-size:2rem;
+    justify-content: center;
+    align-items: center;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+.types{
+    /* background-color: blue; */
+    margin-top:10px;
+    margin-left:15px;
+    width:43vw;
+    align-items: center;
+    justify-content: center;
+    height:16vh;
+    margin-top:30px;
+}
+.types label{
+    color:white;
+    text-align: center;
+    font-size:1.1rem;
+    justify-content: center;
+    align-items: center;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+.pop{
+    background-color:  rgb(100, 30, 167);
+    height: 35vh;
+    width:45vw;
+    margin-left:40px;
+    border-radius:9px;
+}
