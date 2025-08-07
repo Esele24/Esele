@@ -1,8 +1,6 @@
 import React, { useState } from "react";
-
 export function PasswordToggle() {
   const [show, setShow] = useState(false);
-
   return (
     <div style={{ textAlign: "center" }}>
       <input

@@ -39,7 +39,7 @@ export function Doctrine({}){
                     <div className={styles.type}>
                         <br></br>
                         <br></br>
-                        <center><label>REDEMPTION</label></center>
+                        <center><label className={styles.labl}>REDEMPTION</label></center>
                     </div>
                     <div className={styles.types}>
                         <center>
@@ -52,6 +52,27 @@ export function Doctrine({}){
                             <label>slaves to sin, but have become the righteousness of God in Christ Jesus"</label>
                             <br></br>
                             <label>John 3:16, Hebrews 9:12, Romans 6:6, John 10:10-11</label>
+                        </center>
+                    </div>
+                </div>
+                <br></br>
+                <div className={styles.popp}>
+                    <div className={styles.type}>
+                        <br></br>
+                        <br></br>
+                        <center><label>BAPTISM OF THE HOLY GHOST</label></center>
+                    </div>
+                    <div className={styles.types}>
+                        <center>
+                            <label>"We believe strongly in the baptism of the Holy Ghost, as it was bestowed</label>
+                            <br></br>
+                            <label>on the apostles, we believe in the profound spirtual experience</label>
+                            <br></br>
+                            <label>of the Holy Ghost coming upon someone resulting in deeper intimacy</label>
+                            <br></br>
+                            <label>with God, supernatural gifts, awakenings etc.</label>
+                            <br></br>
+                            <label>Acts 1:8, Mark 1:8, Acts 2:4</label>
                         </center>
                     </div>
                 </div>

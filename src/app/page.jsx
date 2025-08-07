@@ -1,3 +1,4 @@
+"use client"
 import Image from "next/image"
 import styles from "./page.module.css"
 import { Hero } from "@/COMPONENTS/HERO A NAVBAR/hero"
@@ -22,7 +23,9 @@ export default function Home({}){
   return(
     <>
     <Counter/>
+    <br></br>
     <PasswordToggle/>
+    <br></br>
     <TodoApp/>
     {/* <Navbar/>
     <Back/>
