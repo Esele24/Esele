@@ -19,14 +19,16 @@ import { Traveljournal } from "@/COMPONENTS/traveljournal";
 import { Counter } from "@/COMPONENTS/ass1"
 import { PasswordToggle } from "@/COMPONENTS/ass2"
 import { TodoApp } from "@/COMPONENTS/ass3"
+import AboutPage from "./people/page"
 export default function Home({}){
   return(
     <>
-    <Counter/>
+    <AboutPage/>
+    {/* <Counter/>
     <br></br>
     <PasswordToggle/>
     <br></br>
-    <TodoApp/>
+    <TodoApp/> */}
     {/* <Navbar/>
     <Back/>
     <About/>
