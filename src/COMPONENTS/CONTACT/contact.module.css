@@ -1,0 +1,144 @@
+.contact{
+    /* background-color: yellow;
+    background-color: red; */
+    background-color: whitesmoke; 
+    height:200vh;
+}
+.begin{
+    /* background-color: blue; */
+    height: 48vh;
+    margin-bottom:10px;
+    align-items: center;
+    justify-content: center;
+    width:60vw;
+    margin-left:265px;
+    /* margin-top:21px; */
+}
+.top{
+    /* background-color: yellow; */
+    height: 20vh;
+    width:40vw;
+    margin-left:140px;
+    margin-top:46px;
+    font-size: 3rem;
+}
+.txt{
+    font-size: 3rem;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin-left:178px;
+    color:black;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+.fell{
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin-left:183px;
+    color:  rgb(100, 30, 167);
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    margin-top:90px;
+}
+.mission{
+    /* background-color: yellow; */
+    height: 10vh;
+    width:60vw;
+    margin-left:265px;
+    margin-top:-110px;
+    font-size: 1.3rem;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+}
+.text{
+    color:  rgb(100, 30, 167);
+}
+.mid{
+    color:  rgb(100, 30, 167);
+}
+.send{
+    /* background-color: blue; */
+    background-color: white;
+    width:60%;
+    height:120vh;
+    margin-top:50px;
+    margin-left:50px;
+    border-radius:7px;
+}
+.message{
+    /* background-color: yellow; */
+    width:30%;
+    height:6vh;
+    margin-left:6px;
+}
+.message label{
+    font-size:1.5rem;
+    font-weight: bold;
+    font-family: cursive;
+}
+.name{
+    /* background-color: yellow; */
+    height:15vh;
+    width:50%;
+    margin-left:6px;
+    margin-top:25px;
+}
+.name label{
+    font-family: cursive;
+    font-size:1.1rem;
+}
+.names{
+    /* background-color: yellow; */
+    height:15vh;
+    width:101%;
+    margin-left:6px;
+    margin-top:10px;
+}
+.names label{
+    font-family: cursive;
+    font-size:1.1rem;
+}
+.namess{
+    /* background-color: yellow; */
+    height:15vh;
+    width:101%;
+    margin-left:6px;
+    margin-top:10px;
+}
+.namess label{
+    font-family: cursive;
+    font-size:1.1rem;
+}
+.namesss{
+    background-color: navy;
+    height:5vh;
+    width:98%;
+    margin-left:6px;
+    border-radius:5px;
+    border: none;
+    color:white;
+}
+.namesss:hover{
+    background-color:rgb(126, 126, 233);
+}
+.namess input{
+    height:25vh;
+}
+.input{
+    height:5vh;
+    border-radius: 5px;
+    border-color: rgb(8, 8, 204);
+    outline: none;
+    background-color: rgb(236, 232, 232);
+    /* border: none; */
+    width:96%;
+    margin-top:7px;
+    color: rgb(12, 12, 107);
+}
+.input::placeholder{
+    color: rgb(12, 12, 107);
+}
+.display{
+    display: flex;
+    gap:40px;
+}

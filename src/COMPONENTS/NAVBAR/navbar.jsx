@@ -15,7 +15,7 @@ export function Navbar ({}){
                     <label className={styles.text}><Link href="#event-section" className={styles.link}>Events</Link></label>
                     <label className={styles.text}><Link href="#leadership-section" className={styles.link}>Leadership</Link></label>
                     <label className={styles.text}><Link href="#doctrine-section" className={styles.link}>Doctrine</Link></label>
-                    <label className={styles.text}>Contact</label>
+                    <label className={styles.text}><Link href="#contact-section" className={styles.link}>Contact</Link></label>
                 </div>
                 <div className={styles.button}>
                     <button className= {styles.click}>Join Us </button>

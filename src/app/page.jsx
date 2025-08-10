@@ -20,21 +20,23 @@ import { Counter } from "@/COMPONENTS/ass1"
 import { PasswordToggle } from "@/COMPONENTS/ass2"
 import { TodoApp } from "@/COMPONENTS/ass3"
 import AboutPage from "./people/page"
+import { Contact, ContactUs } from "@/COMPONENTS/CONTACT/contact"
 export default function Home({}){
   return(
     <>
-    <AboutPage/>
-    {/* <Counter/>
-    <br></br>
-    <PasswordToggle/>
-    <br></br>
-    <TodoApp/> */}
-    {/* <Navbar/>
+    <Navbar/>
     <Back/>
     <About/>
     <Events/>
     <Leadership/>
-    <Doctrine/> */}
+    <Doctrine/>
+    <Contact/>
+    {/* <Counter/>
+    <br></br>
+    <PasswordToggle/>
+    <br></br>
+    <AboutPage/>
+    <TodoApp/> */}
       {/* <Applications/>
       <Traveljournal/> */}
     {/* <Traveljournal/> */}
@@ -166,4 +168,3 @@ export default function Home({}){
     //       <li>Big companies use it</li>
     //     </ol>
     // </div>
-
