@@ -57,7 +57,7 @@
     color:  rgb(100, 30, 167);
 }
 .weekly{
-    /* background-color: whitesmoke; */
+    background-color: whitesmoke;
     height:120vh;
     width:95vw;
     margin-top:20px;
@@ -80,6 +80,7 @@
     margin-left: 7px;
     border-radius:8px;
     margin-top:20px;
+    transition:0.3s;
 }
 .loop:hover{
     transform: scale(1.01, 1.01);

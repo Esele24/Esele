@@ -1,4 +1,6 @@
 "use client"
+import React from "react";
+import ReactDOM from "react-dom/client";
 import Image from "next/image"
 import styles from "./page.module.css"
 import { Hero } from "@/COMPONENTS/HERO A NAVBAR/hero"
@@ -21,6 +23,8 @@ import { PasswordToggle } from "@/COMPONENTS/ass2"
 import { TodoApp } from "@/COMPONENTS/ass3"
 import AboutPage from "./people/page"
 import { Contact, ContactUs } from "@/COMPONENTS/CONTACT/contact"
+import { Assignment } from "@/COMPONENTS/ASSIGNMENT/assignment"
+import { Form } from "./register/page";
 export default function Home({}){
   return(
     <>
@@ -31,6 +35,8 @@ export default function Home({}){
     <Leadership/>
     <Doctrine/>
     <Contact/>
+    {/* <Assignment/>
+    <Form/> */}
     {/* <Counter/>
     <br></br>
     <PasswordToggle/>

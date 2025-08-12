@@ -61,7 +61,7 @@
 }
 .leaders{
     /* background-color: blue; */
-    height:76vh;
+    height:81vh;
     width:93.7vw;
     margin-left:33px;
     display: flex;
@@ -76,6 +76,7 @@
     margin-left:30px;
     margin-top:22px; 
     border-radius:10px;
+    transition: 0.3s;
 }
 .circle{
     background-color: aqua;

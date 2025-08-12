@@ -4,3 +4,11 @@ body{
     background-color: rgb(219, 219, 239);
     scroll-behavior: smooth;
 } 
+/* body.light {
+  background-color: white;
+  color: black;
+}
+body.dark {
+  background-color: #121212;
+  color: white;
+} */
