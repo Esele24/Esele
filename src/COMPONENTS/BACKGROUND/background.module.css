@@ -68,6 +68,7 @@
 .join:hover{
     transform: scale(1.02,1.02);
     background-color: rgb(120, 37, 37);
+    cursor: pointer;
 }
 /* .onclick{
     align-items: center;

@@ -3,6 +3,10 @@ import { MapPin } from "lucide-react"
 import { Clock } from "lucide-react"
 import { Mail } from "lucide-react"
 import { Phone } from "lucide-react"
+import { Instagram } from "lucide-react"
+import { FaYoutube } from "react-icons/fa6"
+import { FaSpotify } from "react-icons/fa"
+import Link from "next/link"
 export function Contact ({}){
     return(
         <div>
@@ -81,7 +85,7 @@ export function Contact ({}){
                     <div className={styles.places}>
                         <div className={styles.item}>
                             <div className={styles.icon}>
-                                <MapPin fill="rgb(100, 30, 167)" color="white" size={50} className={styles.op}/> 
+                                <MapPin fill="navy" color="white" size={50} className={styles.op}/> 
                             </div>
                             <div className={styles.texts}>
                                 <label className={styles.label}><strong>Meeting Location</strong></label>
@@ -106,7 +110,7 @@ export function Contact ({}){
                                 <br></br>
                                 <label className={styles.labels}>Monthly Q & A: Last Thursday of every month</label>
                                 <br></br>
-                                <label className={styles.labels}>Topfaith University</label>
+                                <label className={styles.labels}>Monthly Prayers: Second Thursday of every month</label>
                             </div>
                         </div>
                         <div className={styles.item}>
@@ -126,7 +130,7 @@ export function Contact ({}){
                         </div>
                         <div className={styles.item}>
                             <div className={styles.icon}>
-                                <Phone fill="rgb(100, 30, 167)" color="white" size={50} className={styles.op}/> 
+                                <Phone fill="navy" color="white" size={50} className={styles.op}/> 
                             </div>
                             <div className={styles.texts}>
                                 <label className={styles.label}><strong>Call Us</strong></label>
@@ -138,6 +142,28 @@ export function Contact ({}){
                                 <br></br>
                                 <label className={styles.labels}>Secretary General: 08062169811</label>
                             </div>
+                        </div>
+                        <br></br>
+                        <div className={styles.itemsss}>
+                            <div className={styles.icons}>
+                                <label>Follow Us On Social Media</label>
+                            </div>
+                            <div className={styles.div}>
+                                <div className={styles.isa}>
+                                    <Instagram fill="navy" color="white" size={30} className={styles.op}/> 
+                                    <label className={styles.lab}><Link href="https://instagram.com/tu_fellowships" className={styles.link}>Instagram</Link></label>
+                                </div>
+                                <div className={styles.isa}>
+                                    <FaSpotify fill="navy" color="white" size={30} className={styles.op}/> 
+                                    <label className={styles.lab}><Link href="https://openspotify.com/show/0voZtfepu40d36nLjYK6nT" className={styles.link}>Spotify</Link></label>
+                                </div>
+                            </div>
+                            <center>
+                                <div className={styles.isab}>
+                                    <FaYoutube fill="navy" color="white" size={30} className={styles.op}/> 
+                                    <label className={styles.labs}><Link href="https://youtube.com/@tu_fellowship?si=zMp7qgmGO9H7oEPO" className={styles.link}>YouTube</Link></label>
+                                </div>
+                            </center>
                         </div>
                     </div>
                 </div>

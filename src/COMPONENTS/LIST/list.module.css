@@ -1,0 +1,36 @@
+.list{
+    /* background-color: navy; */
+    margin-left:150px;
+    margin-top:90px;
+    height:10vh;
+    width:60vw;
+    border: none;
+    border-radius:20px;
+    display: flex;
+}
+.input{
+    background-color: white;
+    margin-top:5px;
+    margin-left:6px;
+    width:45vw;
+    height: 7vh;
+    border-radius:15px;
+    border:none;
+}
+.inputs{
+    background-color: black;
+    margin-top:7.5px;
+    margin-left:6px;
+    width:15vw;
+    height: 7vh;
+    border-radius:15px;
+}
+.loop{
+    color: white;
+    margin-top:8px;
+    /* margin-top:-11px; */
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    font-size:1.4rem;
+}

@@ -144,7 +144,7 @@
 }
 .places{
     /* background-color: red; */
-    height:130vh;
+    height:134vh;
     width:28%;
     margin-top:50px;
     margin-right:30px;
@@ -161,7 +161,7 @@
     background-color: blue;
     background-color: white;
     width: auto;
-    height:21.7vh;
+    height:23.7vh;
     border-radius: 5px;
     display: flex;
     box-shadow: -1px -2px 5px -1px rgb(125, 84, 163);
@@ -169,15 +169,56 @@
 }
 .item:hover{
     transform: scale(1.05,1.05);
-    
+    cursor: pointer;
+}
+.items{
+    background-color:rgb(100, 30, 167);
+    /* background-color: red; */
+    background-color: navy;
+    width: auto;
+    height:26vh;
+    border-radius: 5px;
+    box-shadow: -1px -2px 5px -1px rgb(125, 84, 163);
+    transition: 0.7s;
+}
+.items:hover{
+    transform: scale(1.05,1.05);
+}
+.itemsss{
+    background-color:rgb(100, 30, 167);
+    /* background-color: red; */
+    background-color: navy;
+    width: auto;
+    height:26vh;
+    border-radius: 5px;
+    box-shadow: -1px -2px 5px -1px rgb(125, 84, 163);
+    transition: 0.7s;
+    margin-top:-10px;
+}
+.itemsss:hover{
+    transform: scale(1.05,1.05);
+    cursor: pointer;
 }
 .icon{
-    background-color:rgb(100, 30, 167);
+    background-color:navy;
     height:9vh;
     width:15%;
     margin:20px;
     border-radius:7px;
- 
+}
+.icons{
+    /* background-color:rgb(100, 30, 167); */
+    /* background-color: blue; */
+    height:6vh;
+    width:70%;
+    margin-left:60px;
+    margin-top:-6px;
+    border-radius:7px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color:white;
+    font-size:1.3rem;
 }
 .op{
     margin-left:3px;
@@ -192,10 +233,54 @@
     margin-top:19px;
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
+.isa{
+   /* background-color: yellow; */
+   background-color: white;
+   height:6.6vh;
+   width: 12vw;
+   margin-top:17px;
+   border-radius: 5px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   gap:8px;
+}
+.isab{
+   /* background-color: yellow; */
+   background-color: white;
+   height:6.6vh;
+   width: 12vw;
+   margin-top:17px;
+   border-radius: 5px;
+   display: flex;
+   gap:8px;
+   align-items: center;
+   justify-content: center;
+}
+.lab{
+    color: white;
+    font-size:1.3rem;
+    margin-top:3px;
+}
+.labs{
+    color: white;
+    font-size:1.3rem;
+    margin-top:5px;
+}
+.div{
+    display: flex;
+    gap:21px;
+    margin-left: 14px;
+}
 .label{
     color:black;
     margin-top:-10px;
 }
 .labels{
     margin-top:-100px;
+}
+.link{
+    text-decoration: none;
+    color:rgb(100, 30, 167);
+    color:navy;
 }

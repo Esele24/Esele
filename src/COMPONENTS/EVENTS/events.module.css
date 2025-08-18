@@ -86,6 +86,7 @@
     transform: scale(1.01, 1.01);
     box-shadow: 1px 2px 5px 1px rgb(125, 84, 163);
     margin-top: 11px;
+    cursor: pointer;
 }
 .topp{
     background-color:blue;

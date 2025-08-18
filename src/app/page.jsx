@@ -25,6 +25,8 @@ import AboutPage from "./people/page"
 import { Contact, ContactUs } from "@/COMPONENTS/CONTACT/contact"
 import { Assignment } from "@/COMPONENTS/ASSIGNMENT/assignment"
 import { Form } from "./register/page";
+import { List } from "@/COMPONENTS/LIST/list";
+import { End } from "@/COMPONENTS/END/end";
 export default function Home({}){
   return(
     <>
@@ -35,6 +37,9 @@ export default function Home({}){
     <Leadership/>
     <Doctrine/>
     <Contact/>
+    <End/>
+    {/* <List/> */}
+  
     {/* <Assignment/>
     <Form/> */}
     {/* <Counter/>

@@ -78,4 +78,5 @@
 }
 .click:hover{
     background-color:rgb(126, 126, 233);
+    cursor: pointer;
 }
