@@ -14,7 +14,7 @@ export function About ({}){
                         <label className={styles.txt}>
                             <b>About Our</b>
                         </label>
-                        <br></br>
+                        {/* <br></br> */}
                         <label className={styles.fell}>
                             <b>Fellowship</b>
                         </label>
@@ -28,8 +28,9 @@ export function About ({}){
                             <label className={styles.mid}>
                                 Our fellowship provides a welcoming space for spiritual growth, authentic
                             </label>
+                            <br></br>
                             <label className={styles.end}>
-                                relationships, and purposeful living during your university journey
+                                relationships, and purposeful living during your university journey.
                             </label>
                         </div>
                     </div>
@@ -39,15 +40,13 @@ export function About ({}){
                         <div className={styles.circle}>
                             <Heart fill="rgb(100, 30, 167)" color="white" size={40}/> 
                         </div> 
-                        <br></br>
                         <div className={styles.faith}>
                             <label className={styles.poin}>Faith-Centered</label>
-                            <br></br>
                             <br></br>
                             <label className={styles.point}>Growing together in our</label>
                             <label className={styles.point}>relationship with Christ</label>
                             <label className={styles.point}>through prayer, worship, and</label>
-                            <label className={styles.point}>biblical study.</label>
+                            <label className={styles.point}>bible study.</label>
                         </div>
                     </div>
                     <div className={styles.stack}>
@@ -57,11 +56,10 @@ export function About ({}){
                         <div className={styles.faith}>
                             <label className={styles.poi}>Community</label>
                             <br></br>
-                            <br></br>
                             <label className={styles.point}>Building meaningful</label>
-                            <label className={styles.point}>riendships and supporting</label>
+                            <label className={styles.point}>friendships and supporting</label>
                             <label className={styles.point}>each other through university</label>
-                            <label className={styles.point}>life and beyond</label>
+                            <label className={styles.point}>life and beyond.</label>
                         </div>
                     </div>
                     <div className={styles.stack}>
@@ -69,13 +67,12 @@ export function About ({}){
                             <BookOpen fill="rgb(100, 30, 167)" color="white" size={40}/> 
                         </div> 
                         <div className={styles.faith}>
-                            <label className={styles.poi}>Learning</label>
-                            <br></br>
+                            <label className={styles.poii}>Learning</label>
                             <br></br>
                             <label className={styles.point}>Exploring God's word</label>
                             <label className={styles.point}>together and applying biblical</label>
                             <label className={styles.point}>principles to our daily lives as</label>
-                            <label className={styles.point}>students</label>
+                            <label className={styles.point}>students.</label>
                         </div>
                     </div>
                     <div className={styles.stack}>
@@ -83,11 +80,10 @@ export function About ({}){
                             <Star fill="rgb(100, 30, 167)" color="white" size={40}/> 
                         </div> 
                         <div className={styles.faith}>
-                            <label className={styles.poi}>Purpose</label>
-                            <br></br>
+                            <label className={styles.poiii}>Purpose</label>
                             <br></br>
                             <label className={styles.point}>Discovering and pursuing</label>
-                            <label className={styles.point}>God's calling for our live</label>
+                            <label className={styles.point}>God's calling for our lives</label>
                             <label className={styles.point}>while making a positive</label>
                             <label className={styles.point}>impact on campus.</label>
                         </div>
@@ -95,30 +91,32 @@ export function About ({}){
                 </div>
                 <div className={styles.midd}>
                     <br></br>
-                    <div className={styles.type}>
-                        <center><label>Our Mission</label></center>
+                    <div className={styles.tyype}>
+                        <label>Our Mission</label>
                     </div>
                     <div className={styles.types}>
                         <center>
                             <label>"To create a vibrant community where university students can experience God's love, grow</label>
-                            <br></br>
+                            {/* <br></br> */}
                             <label>in their faith, build lasting friendships, and discover their purpose in Christ while navigating</label>
                             <label>the challenges and opportunities of university life."</label>
                         </center>
                     </div>
                 </div>
+                <br></br>
+                <br></br>
                 <div className={styles.pop}>
                     <div className={styles.type}>
-                        <br></br>
-                        <br></br>
-                        <center><label>Our Vision</label></center>
+                        {/* <br></br>
+                        <br></br> */}
+                        <label>Our Vision</label>
                     </div>
-                    <div className={styles.types}>
+                    <div className={styles.typess}>
                         <center>
                             <label>"We see a time when nobody would need to tell the students of</label>
-                            <br></br>
+                            {/* <br></br> */}
                             <label>Topfaith University about Christ, because they will all know him</label>
-                            <br></br>
+                            {/* <br></br> */}
                             <label>they will all pray to him, praise, and worship him"</label>
                         </center>
                     </div>

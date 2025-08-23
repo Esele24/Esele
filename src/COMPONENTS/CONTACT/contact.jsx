@@ -155,7 +155,7 @@ export function Contact ({}){
                                 </div>
                                 <div className={styles.isa}>
                                     <FaSpotify fill="navy" color="white" size={30} className={styles.op}/> 
-                                    <label className={styles.lab}><Link href="https://openspotify.com/show/0voZtfepu40d36nLjYK6nT" className={styles.link}>Spotify</Link></label>
+                                    <label className={styles.lab}><Link href="https://spotify.com/" className={styles.link}>Spotify</Link></label>
                                 </div>
                             </div>
                             <center>

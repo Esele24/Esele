@@ -27,7 +27,7 @@
     text-align: center;
     align-items: center;
     justify-content: center;
-    margin-left:178px;
+    margin-left:207px;
     color:black;
     font-family:Georgia, 'Times New Roman', Times, serif;
 }
@@ -35,7 +35,7 @@
     text-align: center;
     align-items: center;
     justify-content: center;
-    margin-left:93px;
+    margin-left:124px;
     color:  rgb(100, 30, 167);
     font-family:Georgia, 'Times New Roman', Times, serif;
     margin-top:90px;
@@ -145,14 +145,15 @@
     font-weight: bold;
 }
 .poin{
-    margin-top:-740px;
-    margin-left:105px;
+    /* margin-top:-740px;
+    margin-left:105px; */
     font-size:1.2rem;
     font-weight: bold;
     font-family: Georgia, 'Times New Roman', Times, serif;
     justify-content: center;
     align-items: center;
     text-align: center;
+    display: flex;
 }
 .poinn{
     margin-top:-740px;
@@ -175,21 +176,23 @@
     text-align: center;
 }
 .sele{
-    margin-top:-740px;
-    margin-left:105px;
-    margin-bottom:90px;
+    /* margin-top:-740px;
+    margin-left:105px; */
+    /* margin-bottom:90px; */
     font-size:1.2rem;
     font-weight: bold;
     font-family: Georgia, 'Times New Roman', Times, serif;
     justify-content: center;
     align-items: center;
     text-align: center;
+    display: flex;
     color:rgb(100, 30, 167);
 }
 .pele{
-    margin-top:-700px;
+    /* margin-top:-700px;
     margin-left:120px;
-    margin-bottom:70px;
+    margin-bottom:70px; */
+    display: flex;
     font-size:1.2rem;
     font-weight: bold;
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -265,7 +268,9 @@
     justify-content: center;
     align-items: center;
     text-align: center;
+    display: flex;
     color:rgb(139, 77, 196);
+
 }
 .peles{
     font-size:1rem;
@@ -314,7 +319,6 @@
     flex-direction: column;
     margin-top:-14px;
     gap:12px;
-    
 }
 .pop{
     margin-left:40px;

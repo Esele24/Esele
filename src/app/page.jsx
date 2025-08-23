@@ -38,6 +38,8 @@ export default function Home({}){
     <Doctrine/>
     <Contact/>
     <End/>
+        {/* <Form/>
+     <Link href='/register'>Register</Link>
     {/* <List/> */}
   
     {/* <Assignment/>

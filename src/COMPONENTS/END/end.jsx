@@ -50,7 +50,7 @@ export function End({}){
                 </div>
                 <div className={styles.under}></div>
                 <div className={styles.line}>
-                    <center>&copy; 2025 Campus Fellowship. All rights reserved. | Building community through faith</center>
+                    <center>&copy; 2025 Topfaith University Fellowship. All rights reserved. | Building community through faith</center>
                 </div>
             </div>
         </div>

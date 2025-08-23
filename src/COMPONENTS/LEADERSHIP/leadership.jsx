@@ -41,7 +41,7 @@ export function Leadership({}){
                         <br></br>
                         <div className={styles.faith}>
                             <label className={styles.poin}>Esele E. Okogbo</label>
-                            <label className={styles.sele}><center>President</center></label>
+                            <label className={styles.sele}>President</label>
                             <label className={styles.seles}><center>B.Sc Software Engineering (in view)</center></label>
                             <br></br>
                             <label className={styles.point}>Passionate about creating inclusive</label>
@@ -49,7 +49,7 @@ export function Leadership({}){
                             <label className={styles.point}>community building</label>
                             {/* <br></br> */}
                             <div className={styles.mal}>                                
-                                <label className={styles.pop}>president.tufellowships@gmail.com</label>
+                                <label className={styles.pop}>202300112@topfaith.edu.ng</label>
                                 <Mail fill="none" color="navy" size={35}/>
                             </div>
                             <div className={styles.mall}>                                
@@ -69,9 +69,9 @@ export function Leadership({}){
                         <br></br>
                         <div className={styles.faith}>
                             <label className={styles.poin}>Precious N. Onah</label>
-                            <br></br>
+                            {/* <br></br> */}
                             <label className={styles.pele}>Vice President</label>
-                            <br></br>
+                            {/* <br></br> */}
                             <label className={styles.peles}>LL.B Law (in view)</label>
                             <br></br>
                             <br></br>
@@ -80,7 +80,7 @@ export function Leadership({}){
                             <label className={styles.point}>and fellowship.</label>
                             {/* <br></br> */}
                             <div className={styles.mal}>                                
-                                <label className={styles.pop}>vp.tufellowships@gmail.com</label>
+                                <label className={styles.pop}>202100062@topfaith.edu.ng</label>
                                 <Mail fill="none" color="navy" size={35}/>
                             </div>
                             <div className={styles.mall}>                                
@@ -100,7 +100,7 @@ export function Leadership({}){
                         <br></br>
                         <div className={styles.faith}>
                             <label className={styles.poin}>Godson O. Jacob</label>
-                            <br></br>
+                            {/* <br></br> */}
                             <label className={styles.gele}>Secretary General</label>
                             <br></br>
                             <label className={styles.peles}>LL.B Law (in view)</label>
@@ -111,7 +111,7 @@ export function Leadership({}){
                             <label className={styles.point}>and fellowship.</label>
                             {/* <br></br> */}
                             <div className={styles.mal}>                                
-                                <label className={styles.pop}>sg.tufellowships@gmail.com</label>
+                                <label className={styles.pop}>202400323@topfaith.edu.ng</label>
                                 <Mail fill="none" color="navy" size={35}/>
                             </div>
                             <div className={styles.mall}>                                
@@ -135,14 +135,14 @@ export function Leadership({}){
                             <label className={styles.poinn}>Emmanuel C. Egwu</label>
                             <br></br>
                             <label className={styles.cele}>Deputy Secratary General</label>
-                            <label className={styles.seles}><center>LL.B Law (in view)</center></label>
+                            <label className={styles.seles}>LL.B Law (in view)</label>
                             <br></br>
                             <label className={styles.point}>Passionate about souls,prayer,worship</label>
                             <label className={styles.point}>word study, and creating an enabling</label>
                             <label className={styles.point}>environment for peopele to grow in the faith</label>
                             {/* <br></br> */}
                             <div className={styles.mal}>                                
-                                <label className={styles.pop}>dsg.tufellowships@gmail.com</label>
+                                <label className={styles.pop}>202300062@topfaith.edu.ng</label>
                                 <Mail fill="none" color="navy" size={35}/>
                             </div>
                             <div className={styles.mall}>                                
@@ -173,7 +173,7 @@ export function Leadership({}){
                             <label className={styles.point}>fostering accountability</label>
                             {/* <br></br> */}
                             <div className={styles.mal}>                                
-                                <label className={styles.pop}>tr.tufellowships@gmail.com</label>
+                                <label className={styles.pop}>202200098@topfaith.edu.ng</label>
                                 <Mail fill="none" color="navy" size={35}/>
                             </div>
                             <div className={styles.mall}>                                
@@ -188,12 +188,12 @@ export function Leadership({}){
                     </div>
                     <div className={styles.stack}>
                         <div className={styles.square}>
-                            <img className={styles.pre} src="Screenshot_20250802_203634_Instagram.jpg"/> 
+                            <img className={styles.pre} src="IMG-20250819-WA0250.jpg"/> 
                         </div> 
                         <br></br>
                         <div className={styles.faith}>
                             <label className={styles.poin}>Success G. Patrick</label>
-                            <br></br>
+                            {/* <br></br> */}
                             <label className={styles.geles}>Public Relations Officer</label>
                             <br></br>
                             <label className={styles.peles}>LL.B Law (in view)</label>
@@ -204,7 +204,7 @@ export function Leadership({}){
                             <label className={styles.point}>families, and thw rold at large</label>
                             {/* <br></br> */}
                             <div className={styles.mal}>                                
-                                <label className={styles.pop}>pro.tufellowships@gmail.com</label>
+                                <label className={styles.pop}>202200179@topfaith.edu.ng</label>
                                 <Mail fill="none" color="navy" size={35}/>
                             </div>
                             <div className={styles.mall}>                                
