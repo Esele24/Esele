@@ -5,7 +5,7 @@ import { Star } from "lucide-react";
 import { Users } from "lucide-react";
 export function About ({}){
     return(
-        <div>
+        <>
             <div className={styles.about} id="about-section">
                 {/* <br></br> */}
                 <div className={styles.begin}>
@@ -33,6 +33,18 @@ export function About ({}){
                                 relationships, and purposeful living during your university journey.
                             </label>
                         </div>
+                    </div>
+                </div>
+                <div className={styles.founders}>
+                    <label className={styles.found}>Established, 2022</label>
+                    {/* <br></br> */}
+                    <label className={styles.found}>Our Founders</label>
+                    {/* <br></br> */}
+                    <div className={styles.yours}>
+                        <label className={styles.founds}>Marylyn A. Ibem,</label>
+                        <label className={styles.founds}>Precious N. Onah,</label>
+                        <label className={styles.founds}>Mfonido O. Akpabio,</label>
+                        <label className={styles.founds}>Imadara O. Akpabio</label>
                     </div>
                 </div>
                 <div className={styles.objectives}>
@@ -122,6 +134,6 @@ export function About ({}){
                     </div>
                 </div>
             </div>
-        </div>
+        </>
     )
 }

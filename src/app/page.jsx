@@ -5,7 +5,7 @@ import Image from "next/image"
 import styles from "./page.module.css"
 import { Hero } from "@/COMPONENTS/HERO A NAVBAR/hero"
 import { Navbar } from "@/COMPONENTS/NAVBAR/navbar"
-import { Back } from "@/COMPONENTS/BACKGROUND/background"
+import { Back, Background } from "@/COMPONENTS/BACKGROUND/background"
 import { Phone, Weather } from "@/COMPONENTS/PHONE/phone"
 import { About } from "@/COMPONENTS/ABOUT/about"
 import { Events } from "@/COMPONENTS/EVENTS/events"
@@ -31,7 +31,7 @@ export default function Home({}){
   return(
     <>
       <Navbar/>
-      <Back/>
+      <Background/>
       <About/>
       <Events/>
       <Leadership/>

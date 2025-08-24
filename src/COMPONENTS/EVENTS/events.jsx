@@ -22,7 +22,7 @@ export function Events({}){
                 <div className={styles.bottom}>
                     <div className={styles.mission}>
                         <label className={styles.text}>
-                            Join us for meaningful gatherings that strengthen our faith and build community. Al
+                            Join us for meaningful gatherings that strengthen our faith and build community. All
                         </label>
                         <br></br>
                         <label className={styles.mid}>

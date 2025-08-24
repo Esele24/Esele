@@ -1,7 +1,7 @@
 .about{
     background-color:rgb(234, 234, 243);
     /* background-color: red; */
-    height:210vh;
+    height:230vh;
     width: 100%;
     /* margin-top: 479px; */
     display: flex;
@@ -15,11 +15,29 @@
     /* margin-bottom:10px; */
     align-items: center;
     display: flex;
+    margin-top:-70px;
     justify-content: center;
     flex-direction: column;
     width:60vw;
     /* margin-left:265px;
     margin-top:21px; */
+}
+.found{
+    color: rgb(100, 30, 167);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size:1.3rem;
+}
+.yours{
+    display: flex;
+    gap:9px;
+    font-size:1.4rem;
+    justify-content: center;
+    align-items: center;
+}
+.founds{
+    color: rgb(100, 30, 167);
 }
 .top{
     /* background-color: yellow; */
@@ -294,4 +312,16 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
+}
+.founders{
+    background-color: white;
+    margin-top:-20px;
+    height: 20vh;
+    width:60vw;
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+    align-items: center;
+    flex-direction: column;
+    gap:7px;
 }

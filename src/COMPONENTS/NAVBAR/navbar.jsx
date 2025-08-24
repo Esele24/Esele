@@ -2,7 +2,7 @@ import Link from "next/link";
 import styles from "./navbar.module.css";
 export function Navbar ({}){
     return(
-        <div>
+        <>
             <div className={styles.nav} id="#nav-section">
                 <br></br>
                 <div className={styles.menu}>
@@ -18,10 +18,9 @@ export function Navbar ({}){
                     <label className={styles.text}><Link href="#contact-section" className={styles.link}>Contact</Link></label>
                 </div>
                 <div className={styles.button}>
-                    <button className= {styles.click}>Join Us </button>
+                    <button className= {styles.click}>Join Us</button>
                 </div>
             </div>
-        </div>
-        
+        </>
     )
 }

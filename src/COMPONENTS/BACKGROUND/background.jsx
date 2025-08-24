@@ -1,7 +1,7 @@
 import styles from "./background.module.css";
-export function Back ({}){
+export function Background ({}){
     return(
-        <div>
+        <>
             <div className={styles.image}>
                 <p className={styles.faith}>
                     <label className={styles.fel}>
@@ -33,6 +33,6 @@ export function Back ({}){
                 </p>
                 <img className={styles.backimg} src="IMG-20250725-WA0037.jpg"/>
             </div>
-        </div>
+        </>
     )
 }
