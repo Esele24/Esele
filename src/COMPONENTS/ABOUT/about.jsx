@@ -7,9 +7,9 @@ export function About ({}){
     return(
         <div>
             <div className={styles.about} id="about-section">
-                <br></br>
+                {/* <br></br> */}
                 <div className={styles.begin}>
-                    <br></br>
+                    {/* <br></br> */}
                     <div className={styles.top}>
                         <label className={styles.txt}>
                             <b>About Our</b>

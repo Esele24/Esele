@@ -7,7 +7,7 @@ export function Back ({}){
                     <label className={styles.fel}>
                         Fellowship 
                     </label>
-                    <br></br> 
+                    {/* <br></br>  */}
                     <label className={styles.bottom}>
                         & Faith 
                     </label>

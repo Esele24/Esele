@@ -30,15 +30,15 @@ import { End } from "@/COMPONENTS/END/end";
 export default function Home({}){
   return(
     <>
-    <Navbar/>
-    <Back/>
-    <About/>
-    <Events/>
-    <Leadership/>
-    <Doctrine/>
-    <Contact/>
-    <End/>
-        {/* <Form/>
+      <Navbar/>
+      <Back/>
+      <About/>
+      <Events/>
+      <Leadership/>
+      <Doctrine/>
+      <Contact/>
+      <End/>
+      {/* <Form/>
      <Link href='/register'>Register</Link>
     {/* <List/> */}
   

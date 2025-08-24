@@ -64,7 +64,7 @@ export function Leadership({}){
                     </div>
                     <div className={styles.stack}>
                         <div className={styles.square}>
-                            <img className={styles.pre} src="IMG-20240611-WA0031.jpg"/> 
+                            <img className={styles.pre} src="IMG-20250823-WA0180.jpg"/> 
                         </div> 
                         <br></br>
                         <div className={styles.faith}>

@@ -1,29 +1,48 @@
 .image{
     /* background-color: red; */
     width: 100%;
-    height:29vh;
+    /* height:29vh; */
     position: relative;
     top:10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .backimg{
     height: 95vh;
     width:100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .faith{
     position: absolute;
-    top: 50%;
-    left: 35%;
-    margin-top:-55px;
+    background-color: black;
+    /* height: 16vh; */
+    width:60vw; 
+    /* top: -5%;
+    /* left: 35%;  */
+    /* margin-top:-55px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     z-index: 20;
     font-size: 5.5rem;
     font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 .fel{
     color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .bottom{
     color:rgb(241, 181, 69);
-    margin-left:50px;
+    /* margin-left:50px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .first{
     font-size:1.5rem;
@@ -44,26 +63,29 @@
     text-align: center;
 }
 .below{
-    /* background-color: rgb(49, 48, 44); */
+    background-color: rgb(49, 48, 44);
+    background-color: red;
     height:26vh;
     width:60vw;
     display: flex;
     flex-direction: column;
-    margin-left:-180px;
-    margin-bottom:-65px;
+    align-items: center;
+    justify-content: center;
+    /* margin-left:-180px;
+    margin-bottom:-65px; */
 }
 .join{
     background-color: rgb(243, 177, 56);
     height:7.5vh;
     width:17vw;
-    margin-top:1px;
-    margin-left:102px;
+    /* margin-top:1px;
+    margin-left:102px; */
     border-radius:10px;
     border:none;
     font-size:1rem;
     color:white;
     align-items: center;
-    display: fl;
+    display: flex;
     justify-content: center;
 }
 .join:hover{

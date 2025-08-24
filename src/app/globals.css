@@ -1,8 +1,9 @@
 body{
-    padding: 0px;
-    margin:0px;
-    background-color: rgb(219, 219, 239);
-    scroll-behavior: smooth;
+  padding: 0px;
+  margin:0px;
+  background-color: rgb(219, 219, 239);
+  scroll-behavior: smooth;
+  width: 100%;
 } 
 /* body.light {
   background-color: white;

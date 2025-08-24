@@ -3,14 +3,14 @@
     /* background-color: red; */
     height:210vh;
     width: 100%;
-    margin-top: 479px;
+    /* margin-top: 479px; */
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 .begin{
-    background-color: blue;
+    /* background-color: blue; */
     height: 48vh;
     /* margin-bottom:10px; */
     align-items: center;

@@ -6,7 +6,7 @@ import { Phone } from "lucide-react"
 import Link from "next/link"
 export function End({}){
     return(
-        <div>
+        <>
             <div className={styles.end}>
                 <div className={styles.ends}>
                     <br></br>
@@ -53,6 +53,6 @@ export function End({}){
                     <center>&copy; 2025 Topfaith University Fellowship. All rights reserved. | Building community through faith</center>
                 </div>
             </div>
-        </div>
+        </>
     )
 }
