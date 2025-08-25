@@ -7,7 +7,6 @@ export function Background ({}){
                     <label className={styles.fel}>
                         Fellowship 
                     </label>
-                    {/* <br></br>  */}
                     <label className={styles.bottom}>
                         & Faith 
                     </label>
@@ -26,9 +25,7 @@ export function Background ({}){
                         </label>
                     </label>
                     <button className={styles.join}>
-                        {/* <button className={styles.onclick}> */}
-                            Join Our Community
-                        {/* </button> */}
+                        Join Our Community
                     </button>
                 </p>
                 <img className={styles.backimg} src="IMG-20250725-WA0037.jpg"/>

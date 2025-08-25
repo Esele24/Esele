@@ -5,26 +5,43 @@ import { Phone } from "lucide-react"
 import Link from "next/link"
 export function Leadership({}){
     return (
-        <div>
+        <>
             <div className={styles.leadership} id="leadership-section">
+                <br></br>
+                <br></br>
+                <br></br>
+                <br></br>
+                <br></br>
+                <br></br>
+                <br></br>
+                <br></br>
+                <br></br>
+                <br></br>
+                <br></br>
+                <br></br>
+                <br></br>
+                <br></br>
+                <br></br>
+                <br></br>
+                <br></br>
+                <br></br>
                 <div className={styles.begin}>
                     <br></br>
                     <div className={styles.top}>
                         <label className={styles.txt}>
                             <b>Our</b>
                         </label>
-                            <br></br>
                         <label className={styles.fell}>
                             <b>Leadership</b>
                         </label>
                     </div>
                 </div>
+                <br></br>
                 <div className={styles.bottom}>
                     <div className={styles.mission}>
                         <label className={styles.text}>
                             Meet the dedicated students who serve our fellowship community with passion and
                         </label>
-                        <br></br>
                         <label className={styles.mid}>
                             commitment. They're here to support you on your spiritual journey and help you find
                         </label>
@@ -219,6 +236,6 @@ export function Leadership({}){
                     </div>
                 </div>
             </div>
-        </div>
+        </>
     )
 }

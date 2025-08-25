@@ -7,14 +7,11 @@ export function About ({}){
     return(
         <>
             <div className={styles.about} id="about-section">
-                {/* <br></br> */}
                 <div className={styles.begin}>
-                    {/* <br></br> */}
                     <div className={styles.top}>
                         <label className={styles.txt}>
                             <b>About Our</b>
                         </label>
-                        {/* <br></br> */}
                         <label className={styles.fell}>
                             <b>Fellowship</b>
                         </label>
@@ -24,11 +21,9 @@ export function About ({}){
                             <label className={styles.text}>
                                 We are a diverse community of university students united by our faith in Jesus Christ.
                             </label>
-                            <br></br>
                             <label className={styles.mid}>
                                 Our fellowship provides a welcoming space for spiritual growth, authentic
                             </label>
-                            <br></br>
                             <label className={styles.end}>
                                 relationships, and purposeful living during your university journey.
                             </label>
@@ -37,9 +32,7 @@ export function About ({}){
                 </div>
                 <div className={styles.founders}>
                     <label className={styles.found}>Established, 2022</label>
-                    {/* <br></br> */}
                     <label className={styles.found}>Our Founders</label>
-                    {/* <br></br> */}
                     <div className={styles.yours}>
                         <label className={styles.founds}>Marylyn A. Ibem,</label>
                         <label className={styles.founds}>Precious N. Onah,</label>
@@ -109,7 +102,6 @@ export function About ({}){
                     <div className={styles.types}>
                         <center>
                             <label>"To create a vibrant community where university students can experience God's love, grow</label>
-                            {/* <br></br> */}
                             <label>in their faith, build lasting friendships, and discover their purpose in Christ while navigating</label>
                             <label>the challenges and opportunities of university life."</label>
                         </center>
@@ -119,16 +111,12 @@ export function About ({}){
                 <br></br>
                 <div className={styles.pop}>
                     <div className={styles.type}>
-                        {/* <br></br>
-                        <br></br> */}
                         <label>Our Vision</label>
                     </div>
                     <div className={styles.typess}>
                         <center>
                             <label>"We see a time when nobody would need to tell the students of</label>
-                            {/* <br></br> */}
                             <label>Topfaith University about Christ, because they will all know him</label>
-                            {/* <br></br> */}
                             <label>they will all pray to him, praise, and worship him"</label>
                         </center>
                     </div>

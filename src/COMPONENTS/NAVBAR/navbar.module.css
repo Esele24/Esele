@@ -1,5 +1,4 @@
 .nav{
-    /* background-color: red; */
     background-color: white;
     height:10vh;
     width: 100%;
@@ -13,7 +12,6 @@
     z-index: 500;
 }
 .menu{
-    /* background: blue; */
     display: flex;
     height: 9vh;
     margin-top:3px;
@@ -29,13 +27,11 @@
     font-size: 1.7rem;
     font-family:'Times New Roman', Times, serif;
     color: rgb(100, 30, 167);
-    /* color:black; */
 }
 .firstimg{
     border-radius: 50%;
 }
 .middlesection{
-    /* background-color: blue; */
     height:9vh;
     width:46vw;
     margin-top:3px;
@@ -59,7 +55,6 @@
     color: navy;
 }
 .button{
-    /* background-color: blue; */
     height:9vh;
     width:16vw;
     margin-top:3px;
