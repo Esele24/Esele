@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .upcoming{
     background-color:whitesmoke;
     height:180vh;
@@ -96,57 +97,174 @@
     transform: scale(1.01, 1.01);
     box-shadow: 1px 2px 5px 1px rgb(125, 84, 163);
     margin-top: 11px;
-    cursor: pointer;
-}
-.topp{
-    background-color:blue;
-    height:1.5vh;
-    width:43vw;
-    border-radius:10px;
-    margin-left:20px;
-    margin-top:16px;
-}
-.toppp{
-    background-color:purple;
-    height:1.5vh;
-    width:43vw;
-    border-radius:10px;
-    margin-left:20px;
-    margin-top:16px;
-}
-.topppp{
-    background-color:orangered;
-    height:1.5vh;
-    width:43vw;
-    border-radius:10px;
-    margin-left:20px;
-    margin-top:16px;
-}
-.toppppp{
-    background-color:green;
-    height:1.5vh;
-    width:43vw;
-    border-radius:10px;
-    margin-left:20px;
-    margin-top:16px;
-}
-.meeting{
-    margin-left:20px;
-    margin-top:14px;
-    font-family:Georgia, 'Times New Roman', Times, serif;
-    font-size:1.3rem;
-    font-weight: bold;
-}
-.first{
-    margin-top:10px;
+=======
+/* events.module.css - simple & responsive (local module) */
+
+.upcoming {
+    background-color: whitesmoke;
+    padding: 3.5rem 1rem;
+    box-sizing: border-box;
+    width: 100%;
+  }
+  
+  .begin {
+    max-width: 1100px;
+    margin: 0 auto 0.75rem;
     display: flex;
-    gap:8px;
-}
-.first label{
-    color:navy;
-    margin-top:5.5px;
-}
-.footer label{
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .top {
+    text-align: center;
+  }
+  
+  /* keep your visual sizes but responsive */
+  .txt {
+    font-size: 2.2rem;
+    margin: 0;
+    color: #000;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+  
+  .fell {
+    font-size: 2.4rem;
+    margin: 0.4rem 0 0;
+    color: rgb(100, 30, 167);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+  
+  /* mission paragraph */
+  .bottom {
+    max-width: 1000px;
+    margin: 0.25rem auto 1.5rem;
+    text-align: center;
+  }
+  
+  .mission {
+    font-size: 1.05rem;
+    color: rgb(100, 30, 167);
+    line-height: 1.45;
+    margin: 0;
+  }
+  
+  /* EVENTS GRID ROWS */
+  .weekly,
+  .week {
+    max-width: 1100px;
+    margin: 1rem auto;
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap; /* allows wrapping on small screens */
+    justify-content: center;
+    box-sizing: border-box;
+  }
+  
+  /* single event card */
+  .loop {
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 1rem;
+    box-sizing: border-box;
+    flex: 1 1 calc(50% - 1rem);
+    min-width: 260px;
+    max-width: 540px;
+    transition: transform 180ms ease, box-shadow 180ms ease;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .loop:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 14px 30px rgba(0, 0, 0, 0.08);
+>>>>>>> ae20c13
+    cursor: pointer;
+  }
+  
+  /* decorative top accent bar variations */
+  .topp,
+  .toppp,
+  .topppp,
+  .toppppp,
+  .topppp,
+  .topppp,
+  .topppp,
+  .topppp,
+  .topppp,
+  .topppp,
+  .topppp,
+  .toppppp {
+    height: 6px;
+    width: 100%;
+    border-radius: 6px;
+    margin-bottom: 8px;
+  }
+  
+  /* keep your original color choices */
+  .topp { background-color: blue; }
+  .toppp { background-color: purple; }
+  .topppp { background-color: orangered; }
+  .toppppp { background-color: green; }
+  .topppp { background-color: orangered; }
+  .toppppp { background-color: green; }
+  
+  /* meeting content */
+  .meeting {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+  
+  .meeting h3 {
+    margin: 0 0 0.6rem 0;
+    font-size: 1.1rem;
+    font-weight: 700;
+  }
+  
+  /* detail rows (icon + text) */
+  .details {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+  }
+  
+  .first {
+    display: flex;
+    gap: 0.6rem;
+    align-items: center;
+  }
+  
+  .first span {
     color: navy;
-    font-size:1.1rem;
-}
+    font-weight: 600;
+  }
+  
+  /* footer text */
+  .footer {
+    margin-top: 0.75rem;
+  }
+  
+  .footer p {
+    margin: 0;
+    color: navy;
+    font-size: 0.98rem;
+    line-height: 1.35;
+  }
+  
+  /* SMALL SCREENS */
+  @media (max-width: 900px) {
+    .txt { font-size: 1.9rem; }
+    .fell { font-size: 2rem; }
+    .loop { flex: 1 1 100%; max-width: 100%; }
+    .topp, .toppp, .topppp, .toppppp { height: 5px; }
+  }
+  
+  @media (max-width: 480px) {
+    .mission { font-size: 0.98rem; }
+    .first span { font-size: 0.95rem; }
+    .meeting h3 { font-size: 1rem; }
+    .upcoming { padding: 2rem 0.75rem; }
+  }
+  

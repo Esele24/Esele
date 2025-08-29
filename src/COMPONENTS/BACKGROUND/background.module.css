@@ -1,20 +1,28 @@
+<<<<<<< HEAD
 .image{
     width: 100%;
+=======
+.imageBackground {
+    background: url(/gathering.jpg);
+    height: 90vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* vertically center text */
+    align-items: center;     /* horizontally center text */
+    text-align: center;
+>>>>>>> ae20c13
     position: relative;
-    top:10vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.backimg{
-    height: 95vh;
-    width:100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.faith{
+    padding: 0 1.5rem; /* keep safe spacing on smaller screens */
+  }
+  
+  /* Add a subtle overlay for readability */
+  .imageBackground::before {
+    content: "";
     position: absolute;
+<<<<<<< HEAD
     width:60vw; 
     top: -5%;
     display: flex;
@@ -81,3 +89,53 @@
     background-color: rgb(120, 37, 37);
     cursor: pointer;
 }
+=======
+    inset: 0;
+    background: rgba(0, 0, 0, 0.45); /* dark overlay */
+    z-index: 1;
+  }
+  
+  .faithMessage {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #fff;
+    text-shadow: 0 4px 12px rgba(0,0,0,0.6);
+    margin-bottom: 1rem;
+    position: relative;
+    z-index: 2;
+  }
+  
+  .faithMessage .bottom {
+    color: #fbbf24; /* golden highlight */
+  }
+  
+  .herotext {
+    font-size: 1.25rem;
+    line-height: 1.7;
+    color: #e5e5e5;
+    max-width: 700px;
+    margin: 0 auto 2rem;
+    position: relative;
+    z-index: 2;
+  }
+  
+  .join {
+    background: #fbbf24;
+    color: #111;
+    font-size: 1.1rem;
+    font-weight: 600;
+    padding: 0.8rem 2rem;
+    border-radius: 999px;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    z-index: 2;
+    transition: all 0.3s ease;
+  }
+  
+  .join:hover {
+    background: #d97706;
+    color: #fff;
+  }
+  
+>>>>>>> ae20c13

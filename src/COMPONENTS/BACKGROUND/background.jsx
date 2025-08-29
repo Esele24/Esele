@@ -1,6 +1,7 @@
 import styles from "./background.module.css";
 export function Background ({}){
     return(
+<<<<<<< HEAD
         <>
             <div className={styles.image}>
                 <p className={styles.faith}>
@@ -27,9 +28,33 @@ export function Background ({}){
                     <button className={styles.join}>
                         Join Our Community
                     </button>
+=======
+
+        <div className={styles.imageBackground}>
+            <p className={styles.faithMessage}>
+                Fellowship <span className={styles.bottom}>& Faith </span>   
+            </p>
+            <div className={styles.herotext}>
+                <p>
+                    Join our vibrant community of faith where students gather to 
                 </p>
-                <img className={styles.backimg} src="IMG-20250725-WA0037.jpg"/>
+                <p>
+                    grow spiritually, build lasting friendships, and discover God's 
+                </p>
+                <p >
+                    purpose for their lives.
+>>>>>>> ae20c13
+                </p>
             </div>
+<<<<<<< HEAD
         </>
+=======
+            
+            <button className={styles.join}>
+                Join Our Community
+            </button>
+        </div>
+
+>>>>>>> ae20c13
     )
 }

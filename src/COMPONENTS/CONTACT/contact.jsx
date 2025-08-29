@@ -1,188 +1,151 @@
-import styles from "./contact.module.css"
-import { MapPin } from "lucide-react"
-import { Clock } from "lucide-react"
-import { Mail } from "lucide-react"
-import { Phone } from "lucide-react"
-import { Instagram } from "lucide-react"
-import { FaYoutube } from "react-icons/fa6"
-import { FaSpotify } from "react-icons/fa"
-import Link from "next/link"
-export function Contact ({}){
-    return(
-        <div>
-            <div className={styles.contact} id="contact-section">
-                <div className={styles.begin}>
-                    <br></br>
-                    <div className={styles.top}>
-                        <label className={styles.txt}>
-                            <b>Get In</b>
-                        </label>
-                            <br></br>
-                        <label className={styles.fell}>
-                            <b>Touch</b>
-                        </label>
-                    </div>
-                </div>
-                <div className={styles.bottom}>
-                    <div className={styles.mission}>
-                        <label className={styles.text}>
-                            We'd love to hear from you! Whether you have questions, want to get involved, or just
-                        </label>
-                        <br></br>
-                        <label className={styles.mid}>
-                            want to connect, don't hesitate to reach out.
-                        </label>
-                    </div>
-                </div>
-                <div className={styles.styles}>
-                    <div className={styles.send}>
-                        <br></br>
-                        <div className={styles.message}>
-                            <label>Send Us a Message</label>
-                        </div>
-                        <form action={""}>
-                            <div className={styles.display}>
-                                <div className={styles.name}>
-                                    <label>First Name</label>
-                                    <br></br>
-                                    <input className={styles.input} type="text" placeholder="  Your first name"></input>
-                                </div>
-                                <div className={styles.name}>
-                                    <label>Last Name</label>
-                                    <br></br>
-                                    <input className={styles.input} type="text" placeholder="  Your last name"></input>
-                                </div>
-                            </div>
-                            <div className={styles.names}>
-                                <label>Email</label>
-                                <br></br>
-                                <input className={styles.input} type="text" placeholder="  reg no@topfaith.edu.ng" required></input>
-                            </div>
-                            <div className={styles.names}>
-                                <label>Phone</label>
-                                <br></br>
-                                <input className={styles.input} type="text" placeholder="  (234) XXX XXX XXX"  required></input>
-                            </div>
-                            <div className={styles.names}>
-                                <label>Year in School</label>
-                                <br></br>
-                                <input className={styles.input} type="text" placeholder="  e.g. JUPEB, IUFP, 100lvl, 300lvl, Final Year" required></input>
-                            </div>
-                            <div className={styles.namess}>
-                                <label>Message</label>
-                                <br></br>
-                                <input className={styles.input} type="text" placeholder="  Tell us about yourself or any questions you might have..." required></input>
-                            </div>
-                            <br></br>
-                            <br></br>
-                            <br></br>
-                            <br></br>
-                            <br></br>
-                            <br></br>
-                            <button className={styles.namesss} type="submit">Send Message</button>
-                        </form>
-                    </div>
-                    <div className={styles.places}>
-                        <div className={styles.item}>
-                            <div className={styles.icon}>
-                                <MapPin fill="navy" color="white" size={50} className={styles.op}/> 
-                            </div>
-                            <div className={styles.texts}>
-                                <label className={styles.label}><strong>Meeting Location</strong></label>
-                                <br></br>
-                                <br></br>
-                                <label className={styles.labels}>Godwin Nwanbunka Hall</label>
-                                <br></br>
-                                <label className={styles.labels}>Behind the Library</label>
-                                <br></br>
-                                <label className={styles.labels}>Topfaith University</label>
-                            </div>
-                        </div>
-                        <div className={styles.item}>
-                            <div className={styles.icon}>
-                                <Clock fill="none" color="white" size={50} className={styles.op}/> 
-                            </div>
-                            <div className={styles.texts}>
-                                <label className={styles.label}><strong>Meeting Times</strong></label>
-                                <br></br>
-                                <br></br>
-                                <label className={styles.labels}>Weekly Fellowship: Thursdays, 6:30PM</label>
-                                <br></br>
-                                <label className={styles.labels}>Monthly Q & A: Last Thursday of every month</label>
-                                <br></br>
-                                <label className={styles.labels}>Monthly Prayers: Second Thursday of every month</label>
-                            </div>
-                        </div>
-                        <div className={styles.item}>
-                            <div className={styles.icon}>
-                                <Mail fill="none" color="white" size={50} className={styles.op}/> 
-                            </div>
-                            <div className={styles.texts}>
-                                <label className={styles.label}><strong>Mail US</strong></label>
-                                <br></br>
-                                <br></br>
-                                <label className={styles.labels}>info.tufellowships@gmail.com</label>
-                                <br></br>
-                                <label className={styles.labels}>president.tufellowships@gmail.com</label>
-                                <br></br>
-                                <label className={styles.labels}>pro.tufellowships@gmail.com</label>
-                            </div>
-                        </div>
-                        <div className={styles.item}>
-                            <div className={styles.icon}>
-                                <Phone fill="navy" color="white" size={50} className={styles.op}/> 
-                            </div>
-                            <div className={styles.texts}>
-                                <label className={styles.label}><strong>Call Us</strong></label>
-                                <br></br>
-                                <br></br>
-                                <label className={styles.labels}>President: 09036669156</label>
-                                <br></br>
-                                <label className={styles.labels}>Vice President: 08142302738</label>
-                                <br></br>
-                                <label className={styles.labels}>Secretary General: 08062169811</label>
-                            </div>
-                        </div>
-                        <br></br>
-                        <div className={styles.itemsss}>
-                            <div className={styles.icons}>
-                                <label>Follow Us On Social Media</label>
-                            </div>
-                            <div className={styles.div}>
-                                <div className={styles.isa}>
-                                    <Instagram fill="navy" color="white" size={30} className={styles.op}/> 
-                                    <label className={styles.lab}><Link href="https://instagram.com/tu_fellowships" className={styles.link}>Instagram</Link></label>
-                                </div>
-                                <div className={styles.isa}>
-                                    <FaSpotify fill="navy" color="white" size={30} className={styles.op}/> 
-                                    <label className={styles.lab}><Link href="https://spotify.com/" className={styles.link}>Spotify</Link></label>
-                                </div>
-                            </div>
-                            <center>
-                                <div className={styles.isab}>
-                                    <FaYoutube fill="navy" color="white" size={30} className={styles.op}/> 
-                                    <label className={styles.labs}><Link href="https://youtube.com/@tu_fellowship?si=zMp7qgmGO9H7oEPO" className={styles.link}>YouTube</Link></label>
-                                </div>
-                            </center>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    )
-}
-// function MyForm() {
-//   const handleSubmit = (formData) => {
-//     const name = formData.get('name');
-//     alert(`Hello, ${name}!`);
-//   };
+import styles from "./contact.module.css";
+import { MapPin, Clock, Mail, Phone, Instagram } from "lucide-react";
+import { FaYoutube } from "react-icons/fa6";
+import { FaSpotify } from "react-icons/fa";
+import Link from "next/link";
 
-//   return (
-//     <form action={handleSubmit}>
-//       <label>
-//         Enter your name:
-//         <input type="text" name="name" />
-//       </label>
-//       <button type="submit">Submit</button>
-//     </form>
-//   );
+const infoCards = [
+  {
+    title: "Meeting Location",
+    icon: MapPin,
+    lines: ["Godwin Nwanbunka Hall", "Behind the Library", "Topfaith University"],
+  },
+  {
+    title: "Meeting Times",
+    icon: Clock,
+    lines: [
+      "Weekly Fellowship: Thursdays, 6:30PM",
+      "Monthly Q & A: Last Thursday of every month",
+      "Monthly Prayers: Second Thursday of every month",
+    ],
+  },
+  {
+    title: "Mail US",
+    icon: Mail,
+    lines: [
+      "info.tufellowships@gmail.com",
+      "president.tufellowships@gmail.com",
+      "pro.tufellowships@gmail.com",
+    ],
+  },
+  {
+    title: "Call Us",
+    icon: Phone,
+    lines: [
+      "President: 09036669156",
+      "Vice President: 08142302738",
+      "Secretary General: 08062169811",
+    ],
+  },
+];
+
+export function Contact() {
+  return (
+    <section className={styles.contact} id="contact-section" aria-labelledby="contact-heading">
+      <header className={styles.begin}>
+        <div className={styles.top}>
+          <h2 id="contact-heading" className={styles.txt}><b>Get In</b></h2>
+          <h1 className={styles.fell}><b>Touch</b></h1>
+        </div>
+
+        <p className={styles.mission}>
+          <span className={styles.text}>
+            We'd love to hear from you! Whether you have questions, want to get involved, or just
+          </span>
+          <br />
+          <span className={styles.mid}>want to connect, don't hesitate to reach out.</span>
+        </p>
+      </header>
+
+      <div className={styles.styles}>
+        {/* Form column */}
+        <article className={styles.send} aria-labelledby="contact-form-title">
+          <h3 id="contact-form-title" className={styles.message}>Send Us a Message</h3>
+
+          <form className={styles.form} action="" onSubmit={(e) => e.preventDefault()}>
+            <div className={styles.display}>
+              <div className={styles.name}>
+                <label htmlFor="firstName">First Name</label>
+                <input id="firstName" name="firstName" className={styles.input} type="text" placeholder="  Your first name" />
+              </div>
+
+              <div className={styles.name}>
+                <label htmlFor="lastName">Last Name</label>
+                <input id="lastName" name="lastName" className={styles.input} type="text" placeholder="  Your last name" />
+              </div>
+            </div>
+
+            <div className={styles.names}>
+              <label htmlFor="email">Email</label>
+              <input id="email" name="email" className={styles.input} type="email" placeholder="  reg no@topfaith.edu.ng" required />
+            </div>
+
+            <div className={styles.names}>
+              <label htmlFor="phone">Phone</label>
+              <input id="phone" name="phone" className={styles.input} type="tel" placeholder="  (234) XXX XXX XXX" required />
+            </div>
+
+            <div className={styles.names}>
+              <label htmlFor="year">Year in School</label>
+              <input id="year" name="year" className={styles.input} type="text" placeholder="  e.g. JUPEB, IUFP, 100lvl, 300lvl, Final Year" required />
+            </div>
+
+            <div className={styles.namess}>
+              <label htmlFor="message">Message</label>
+              <textarea id="message" name="message" className={styles.textarea} placeholder="  Tell us about yourself or any questions you might have..." required />
+            </div>
+
+            <button className={styles.namesss} type="submit">Send Message</button>
+          </form>
+        </article>
+
+        {/* Info column */}
+        <aside className={styles.places} aria-label="Contact details">
+          {infoCards.map((card) => {
+            const Icon = card.icon;
+            return (
+              <div key={card.title} className={styles.item}>
+                <div className={styles.icon}>
+                  <Icon fill="navy" color="white" size={40} className={styles.op} />
+                </div>
+
+                <div className={styles.texts}>
+                  <div className={styles.label}><strong>{card.title}</strong></div>
+                  <div className={styles.labels}>
+                    {card.lines.map((l, i) => (
+                      <div key={i} className={styles.line}>{l}</div>
+                    ))}
+                  </div>
+                </div>
+              </div>
+            );
+          })}
+
+          {/* Social row */}
+          <div className={styles.itemsss}>
+            <div className={styles.icons}>
+              <span className={styles.socialTitle}>Follow Us On Social Media</span>
+            </div>
+
+            <div className={styles.div}>
+              <div className={styles.isa}>
+                <Instagram fill="navy" color="white" size={22} className={styles.op} />
+                <Link className={styles.link} href="https://instagram.com/tu_fellowships">Instagram</Link>
+              </div>
+
+              <div className={styles.isa}>
+                <FaSpotify fill="navy" color="white" size={22} className={styles.op} />
+                <Link className={styles.link} href="https://spotify.com/">Spotify</Link>
+              </div>
+            </div>
+
+            <div className={styles.isab}>
+              <FaYoutube fill="navy" color="white" size={22} className={styles.op} />
+              <Link className={styles.link} href="https://youtube.com/@tu_fellowship?si=zMp7qgmGO9H7oEPO">YouTube</Link>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </section>
+  );
+}

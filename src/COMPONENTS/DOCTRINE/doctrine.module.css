@@ -1,109 +1,113 @@
-.doctrine{
-    background-color: whitesmoke;
-    /* background-color: red; */
-    width:auto;
-    height:270vh;
-}
-.begin{
-    /* background-color: blue; */
-    height: 48vh;
-    margin-bottom:10px;
+/* doctrine.module.css - simple, local, responsive */
+
+/* section */
+.doctrine {
+    width: 100%;
+    padding: 3rem 1rem;
+    box-sizing: border-box;
+    background: whitesmoke;
+    display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
-    width:60vw;
-    margin-left:265px;
-    margin-top:21px;
-}
-.top{
-    /* background-color: yellow; */
-    height: 20vh;
-    width:40vw;
-    margin-left:140px;
-    margin-top:46px;
-    font-size: 3rem;
-}
-.txt{
-    font-size: 3rem;
+  }
+  
+  /* header / title */
+  .header {
+    max-width: 1000px;
+    width: 100%;
     text-align: center;
-    align-items: center;
-    justify-content: center;
-    margin-left:215px;
-    color:black;
-    font-family:Georgia, 'Times New Roman', Times, serif;
-}
-.fell{
+    margin-bottom: 1.25rem;
+  }
+  
+  .smallTitle {
+    margin: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.4rem;
+    color: #000;
+  }
+  
+  .title {
+    margin: 0.25rem 0 0.6rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 2.2rem;
+    color: rgb(100, 30, 167);
+  }
+  
+  /* mission text */
+  .mission {
+    max-width: 900px;
+    margin: 0 auto;
+    color: rgb(100, 30, 167);
+    font-size: 1.02rem;
+    line-height: 1.45;
+  }
+  
+  /* grid of cards */
+  .grid {
+    max-width: 1100px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* two columns on desktop */
+    gap: 1rem;
+    box-sizing: border-box;
+    margin-top: 1rem;
+  }
+  
+  /* single card */
+  .card {
+    background: rgb(100, 30, 167);
+    color: #fff;
+    border-radius: 10px;
+    padding: 1rem;
+    min-height: 180px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.06);
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .cardTitle {
+    margin: 0;
+    font-size: 1.05rem;
     text-align: center;
-    align-items: center;
-    justify-content: center;
-    margin-left:166px;
-    color:  rgb(100, 30, 167);
-    font-family:Georgia, 'Times New Roman', Times, serif;
-    margin-top:90px;
-}
-.mission{
-    /* background-color: yellow; */
-    height: 15vh;
-    width:60vw;
-    margin-left:265px;
-    margin-top:-110px;
-    font-size: 1.3rem;
-    font-family:Georgia, 'Times New Roman', Times, serif;
-    text-align: center;
-}
-.text{
-    color:  rgb(100, 30, 167);
-}
-.mid{
-    color:  rgb(100, 30, 167);
-}
-.end{
-    color:  rgb(100, 30, 167);
-}
-.type{
-    /* background-color: blue; */
-    margin-top:30px;
-    margin-left:170px;
-    width:20vw;
-    align-items: center;
-    justify-content: center;
-}
-.type label{
-    color:white;
-    text-align: center;
-    font-size:1.1rem;
-    justify-content: center;
-    align-items: center;
-    font-family:Georgia, 'Times New Roman', Times, serif;
-}
-.types{
-    /* background-color: blue; */
-    margin-top:10px;
-    margin-left:15px;
-    width:43vw;
-    align-items: center;
-    justify-content: center;
-    height:16vh;
-    margin-top:30px;
-}
-.types label{
-    color:white;
-    text-align: center;
-    font-size:1.1rem;
-    justify-content: center;
-    align-items: center;
-    font-family:Georgia, 'Times New Roman', Times, serif;
-}
-.pop{
-    background-color:  rgb(100, 30, 167);
-    height: 35vh;
-    width:45vw;
-    margin-left:40px;
-    border-radius:9px;
-}
-.popp{
-    background-color:  rgb(100, 30, 167);
-    height: 35vh;
-    width:45vw;
-    margin-left: 680px;
-    border-radius:9px;
-}
+    font-weight: 700;
+    letter-spacing: 0.3px;
+  }
+  
+  .cardBody {
+    margin-top: 0.6rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.35rem;
+  }
+  
+  .paragraph {
+    margin: 0;
+    font-size: 0.98rem;
+    line-height: 1.45;
+    text-align: left;
+  }
+  
+  .scripture {
+    margin-top: 0.4rem;
+    font-size: 0.9rem;
+    font-weight: 600;
+    opacity: 0.95;
+    text-align: left;
+  }
+  
+  /* responsiveness */
+  @media (max-width: 900px) {
+    .grid {
+      grid-template-columns: 1fr; /* stack on small screens */
+    }
+    .title { font-size: 1.8rem; }
+    .smallTitle { font-size: 1.2rem; }
+    .mission { font-size: 1rem; }
+  }
+  
+  @media (max-width: 480px) {
+    .card { padding: 0.9rem; }
+    .paragraph { font-size: 0.95rem; }
+    .scripture { font-size: 0.85rem; }
+  }
+  

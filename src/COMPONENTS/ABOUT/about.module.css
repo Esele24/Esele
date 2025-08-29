@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .about{
     background-color:rgb(234, 234, 243);
     height:230vh;
@@ -203,42 +204,150 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+=======
+/* about.module.css - simple, local-only, responsive */
+
+/* SECTION WRAP */
+.about {
+  background-color: rgb(234, 234, 243);
+  width: 100%;
+  padding: 4rem 1rem; /* comfortable vertical spacing */
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* INTRO / TITLE AREA */
+.begin {
+  width: 90%;
+  max-width: 1100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.4rem;
+  margin-bottom: 1.5rem;
+}
+
+.top {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 0.25rem;
+}
+
+/* keep your labels/text unchanged — just style */
+.txt {
+  font-size: 2.2rem;
+  color: #000;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  margin: 0;
+}
+
+.fell {
+  font-size: 2.4rem;
+  color: rgb(100, 30, 167);
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  margin: 0;
+}
+
+/* MISSION PARAGRAPHS */
+.mission {
+  width: 100%;
+  max-width: 820px;
+  margin-top: 0.8rem;
+  font-size: 1.05rem;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  text-align: center;
+  color: rgb(100, 30, 167);
+  line-height: 1.5;
+}
+
+/* OBJECTIVES CARDS WRAP */
+.objectives {
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap; /* allows cards to wrap on small screens */
+  justify-content: center;
+  margin: 2rem 0;
+  box-sizing: border-box;
+>>>>>>> ae20c13
 }
 .faith{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
+<<<<<<< HEAD
 .tyype{
     width:20vw;
     align-items: center;
     justify-content: center;
     display: flex;
+=======
+
+/* SINGLE CARD */
+.stack {
+  background: #fff;
+  border-radius: 10px;
+  padding: 1.2rem;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+  flex: 1 1 240px; /* flexible - min width ~240px */
+  max-width: 280px;
+  min-height: 180px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.06);
+  transition: transform 180ms ease, box-shadow 180ms ease;
+  flex-direction: column;
+>>>>>>> ae20c13
 }
-.tyype label{
-    color:white;
-    text-align: center;
-    font-size:2rem;
-    justify-content: center;
-    align-items: center;
-    font-family:Georgia, 'Times New Roman', Times, serif;
+
+/* simple hover */
+.stack:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 14px 30px rgba(0,0,0,0.08);
+  cursor: pointer;
 }
+<<<<<<< HEAD
 .type{
     width:20vw;
     align-items: center;
     justify-content: center;
     display: flex;
+=======
+
+/* ICON CIRCLE */
+.circle,
+.triangle,
+.square,
+.cube {
+  background-color: rgb(100, 30, 167);
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  margin-top: 2px;
+>>>>>>> ae20c13
 }
-.type label{
-    color:white;
-    text-align: center;
-    font-size:2rem;
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    font-family:Georgia, 'Times New Roman', Times, serif;
+
+/* title inside card */
+.poin, .poi, .poii, .poiii {
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: #222;
+  margin-bottom: 0.25rem;
 }
+<<<<<<< HEAD
 .types{
     width:55vw;
     align-items: center;
@@ -246,16 +355,33 @@
     height:10vh;
     margin-top:30px;
     display: flex;
+=======
+
+/* bullet lines inside card */
+.point {
+  font-size: 0.95rem;
+  color: rgb(100, 30, 167);
+  line-height: 1.45;
+  margin: 0;
+>>>>>>> ae20c13
 }
-.types label{
-    color:white;
-    text-align: center;
-    font-size:1.1rem;
-    justify-content: center;
-    display: flex;
-    align-items: center;
-    font-family:Georgia, 'Times New Roman', Times, serif;
+
+/* MISSION / VISION BLOCKS (middle & bottom) */
+.midd, .pop {
+  width: 90%;
+  max-width: 1000px;
+  background-color: rgb(100, 30, 167);
+  color: #fff;
+  border-radius: 8px;
+  padding: 1.25rem;
+  margin-top: 1rem;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  align-items: center;
 }
+<<<<<<< HEAD
 .typess{
     width:55vw;
     align-items: center;
@@ -263,16 +389,55 @@
     justify-content: center;
     height:10vh;
     margin-top:30px;
+=======
+
+.tyype, .type {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+>>>>>>> ae20c13
 }
-.typess label{
-    color:white;
-    text-align: center;
-    font-size:1.1rem;
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    font-family:Georgia, 'Times New Roman', Times, serif;
+
+.tyype label, .type label {
+  font-size: 1.6rem;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  margin: 0;
 }
+
+.types, .typess {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 0.25rem;
+}
+
+.types label, .typess label {
+  color: #fff;
+  font-size: 1rem;
+  text-align: center;
+  display: block;
+  line-height: 1.5;
+  max-width: 900px;
+}
+
+/* small screens */
+@media (max-width: 900px) {
+  .txt { font-size: 1.9rem; }
+  .fell { font-size: 2rem; }
+  .mission { font-size: 1rem; max-width: 600px; }
+  .stack { flex: 1 1 45%; max-width: 46%; min-height: 160px; }
+  .circle, .triangle, .square, .cube { width: 56px; height: 56px; }
+}
+
+@media (max-width: 560px) {
+  .begin { width: 95%; padding: 0 0.5rem; }
+  .stack { flex: 1 1 100%; max-width: 100%; }
+  .txt { font-size: 1.6rem; }
+  .fell { font-size: 1.8rem; }
+  .types label, .typess label { font-size: 0.95rem; }
+  .midd, .pop { padding: 1rem; }
+}
+<<<<<<< HEAD
 .pop{
     background-color:  rgb(100, 30, 167);
     height: 35vh;
@@ -295,3 +460,5 @@
     flex-direction: column;
     gap:7px;
 }
+=======
+>>>>>>> ae20c13
