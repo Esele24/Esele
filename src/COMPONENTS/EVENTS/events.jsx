@@ -3,339 +3,153 @@ import { Calendar } from "lucide-react";
 import { Clock } from "lucide-react";
 import { MapPin } from "lucide-react";
 import { Users } from "lucide-react";
-<<<<<<< HEAD
-export function Events({}){
-    return(
-        <>
-            <div className={styles.upcoming} id="event-section">
-                <br></br>
-                <br></br>
-                <br></br>
-                <br></br>
-                <br></br>
-                <br></br>
-                <br></br>
-                <br></br>
-                <br></br>
-                <br></br>
-                <br></br>
-                <br></br>
-                <br></br>
-                <br></br>
-                <br></br>
-                <br></br>
-                <br></br>
-                <br></br>
-                <div className={styles.begin}>
-                    <div className={styles.top}>
-                        <label className={styles.txt}>
-                            <b>Upcoming</b>
-                        </label>
-                        <label className={styles.fell}>
-                            <b>Events</b>
-                        </label>
-                    </div>
-                </div>
-                <div className={styles.bottom}>
-                    <div className={styles.mission}>
-                        <label className={styles.text}>
-                            Join us for meaningful gatherings that strengthen our faith and build community. All
-                        </label>
-                        <label className={styles.mid}>
-                            students are welcome, regardless of where you are in your spiritual journey.
-                        </label>
-                    </div>
-                </div>
-                <div className={styles.middle}>
-                    <div className={styles.weekly}>
-                        <div className={styles.loop}>
-                            <div className={styles.topp}></div>
-                            <div className={styles.meeting}>
-                                <label>Weekly Fellowship Meeting</label>
-                                <div className={styles.first}>
-                                    <Calendar fill="white" color="navy" size={35}/>
-                                    <label>Every Thursday</label>
-                                </div>
-                                <div className={styles.first}>
-                                    <Clock fill="none" color="navy" size={35}/>
-                                    <label>6:30pm-7:45pm</label>
-                                </div>
-                                <div className={styles.first}>
-                                    <MapPin fill="white" color="navy" size={35}/>
-                                    <label>Godwin Nwabunka Hall</label>
-                                </div>
-                                <div className={styles.first}>
-                                    <Users fill="white" color="navy" size={35}/>
-                                    <label>Open to both students and staff</label>
-                                </div>
-                                <div className={styles.footer}>
-                                    <br></br>
-                                    <label>Join us for worship, biblical teaching, and fellowship. A great</label>
-                                    <br></br>
-                                    <label>way to connect with other students and grow in faith.</label>
-                                </div>
-                            </div>
-                        </div>
-                        <div className={styles.loop}>
-                            <div className={styles.toppppp}></div>
-                            <div className={styles.meeting}>
-                                <label>Campus Prayer Walk</label>
-                                <div className={styles.first}>
-                                    <Calendar fill="white" color="navy" size={35}/>
-                                    <label>Every last Thursday of the semester</label>
-                                </div>
-                                <div className={styles.first}>
-                                    <Clock fill="none" color="navy" size={35}/>
-                                    <label>6:00pm</label>
-                                </div>
-                                <div className={styles.first}>
-                                    <MapPin fill="white" color="navy" size={35}/>
-                                    <label>Around the University</label>
-                                </div>
-                                <div className={styles.first}>
-                                    <Users fill="white" color="navy" size={35}/>
-                                    <label>Open to both students and staff</label>
-                                </div>
-                                <div className={styles.footer}>
-                                    <br></br>
-                                    <label>End the semster with prayer as we walk around campus, praying for our</label>
-                                    <label>   university, students, and as the spirit leads us.</label>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div className={styles.week}>
-                        <div className={styles.loop}>
-                            <div className={styles.toppp}></div>
-                            <div className={styles.meeting}>
-                                <label>Monthly Prayer Meeting</label>
-                                <div className={styles.first}>
-                                    <Calendar fill="white" color="navy" size={35}/>
-                                    <label>Every Second Thursday Of The Month</label>
-                                </div>
-                                <div className={styles.first}>
-                                    <Clock fill="none" color="navy" size={35}/>
-                                    <label>6:30pm-7:45pm</label>
-                                </div>
-                                <div className={styles.first}>
-                                    <MapPin fill="white" color="navy" size={35}/>
-                                    <label>Godwin Nwabunka Hall</label>
-                                </div>
-                                <div className={styles.first}>
-                                    <Users fill="white" color="navy" size={35}/>
-                                    <label>Open to both students and staff</label>
-                                </div>
-                                <div className={styles.footer}>
-                                    <br></br>
-                                    <label>Join us for an impactful prayer session as we bask in God's</label>
-                                    <br></br>
-                                    <label>presence with an atmosphere of prayer and worship</label>
-                                </div>
-                            </div>
-                        </div>
-                        <div className={styles.loop}>
-                            <div className={styles.topppp}></div>
-                            <div className={styles.meeting}>
-                                <label>Monthly Question And Answer</label>
-                                <div className={styles.first}>
-                                    <Calendar fill="white" color="navy" size={35}/>
-                                    <label>Every last Thursday of the month</label>
-                                </div>
-                                <div className={styles.first}>
-                                    <Clock fill="none" color="navy" size={35}/>
-                                    <label>6:30pm-7:45pm</label>
-                                </div>
-                                <div className={styles.first}>
-                                    <MapPin fill="white" color="navy" size={35}/>
-                                    <label>Godwin Nwabunka Hall</label>
-                                </div>
-                                <div className={styles.first}>
-                                    <Users fill="white" color="navy" size={35}/>
-                                    <label>Open to both students and staff</label>
-                                </div>
-                                <div className={styles.footer}>
-                                    <br></br>
-                                    <label>Have and bugging questions about the Bible, Doctrine, Christianity?</label>
-                                    <label>   Join us, as we by the spirit, give answers to your questions.</label>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </>
-    )
-}
-=======
 
-export function Events() {
+export function Events({}) {
   return (
-    <section className={styles.upcoming} id="event-section" aria-labelledby="events-heading">
-      <header className={styles.begin}>
-        <div className={styles.top}>
-          <h2 id="events-heading" className={styles.txt}><b>Upcoming</b></h2>
-          <h1 className={styles.fell}><b>Events</b></h1>
+    <>
+      <div className={styles.upcoming} id="event-section">
+        <div className={styles.begin}>
+          <div className={styles.top}>
+            <label className={styles.txt}>
+              <b>Upcoming</b>
+            </label>
+            <label className={styles.fell}>
+              <b>Events</b>
+            </label>
+          </div>
         </div>
-      </header>
 
-      <div className={styles.bottom}>
-        <p className={styles.mission}>
-          <span className={styles.text}>
-            Join us for meaningful gatherings that strengthen our faith and build community. Al
-          </span>
-          <br />
-          <span className={styles.mid}>
-            students are welcome, regardless of where you are in your spiritual journey.
-          </span>
-        </p>
+        <div className={styles.bottom}>
+          <div className={styles.mission}>
+            <label className={styles.text}>
+              Join us for meaningful gatherings that strengthen our faith and build community. All
+            </label>
+            <label className={styles.mid}>
+              students are welcome, regardless of where you are in your spiritual journey.
+            </label>
+          </div>
+        </div>
+
+        <div className={styles.middle}>
+          <div className={styles.weekly}>
+            <div className={styles.loop}>
+              <div className={styles.topp}></div>
+              <div className={styles.meeting}>
+                <label>Weekly Fellowship Meeting</label>
+                <div className={styles.first}>
+                  <Calendar fill="white" color="navy" size={35} />
+                  <label>Every Thursday</label>
+                </div>
+                <div className={styles.first}>
+                  <Clock fill="none" color="navy" size={35} />
+                  <label>6:30pm-7:45pm</label>
+                </div>
+                <div className={styles.first}>
+                  <MapPin fill="white" color="navy" size={35} />
+                  <label>Godwin Nwabunka Hall</label>
+                </div>
+                <div className={styles.first}>
+                  <Users fill="white" color="navy" size={35} />
+                  <label>Open to both students and staff</label>
+                </div>
+                <div className={styles.footer}>
+                  <br />
+                  <label>Join us for worship, biblical teaching, and fellowship. A great</label>
+                  <br />
+                  <label>way to connect with other students and grow in faith.</label>
+                </div>
+              </div>
+            </div>
+
+            <div className={styles.loop}>
+              <div className={styles.toppppp}></div>
+              <div className={styles.meeting}>
+                <label>Campus Prayer Walk</label>
+                <div className={styles.first}>
+                  <Calendar fill="white" color="navy" size={35} />
+                  <label>Every last Thursday of the semester</label>
+                </div>
+                <div className={styles.first}>
+                  <Clock fill="none" color="navy" size={35} />
+                  <label>6:00pm</label>
+                </div>
+                <div className={styles.first}>
+                  <MapPin fill="white" color="navy" size={35} />
+                  <label>Around the University</label>
+                </div>
+                <div className={styles.first}>
+                  <Users fill="white" color="navy" size={35} />
+                  <label>Open to both students and staff</label>
+                </div>
+                <div className={styles.footer}>
+                  <br />
+                  <label>End the semster with prayer as we walk around campus, praying for our</label>
+                  <label>   university, students, and as the spirit leads us.</label>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className={styles.week}>
+            <div className={styles.loop}>
+              <div className={styles.toppp}></div>
+              <div className={styles.meeting}>
+                <label>Monthly Prayer Meeting</label>
+                <div className={styles.first}>
+                  <Calendar fill="white" color="navy" size={35} />
+                  <label>Every Second Thursday Of The Month</label>
+                </div>
+                <div className={styles.first}>
+                  <Clock fill="none" color="navy" size={35} />
+                  <label>6:30pm-7:45pm</label>
+                </div>
+                <div className={styles.first}>
+                  <MapPin fill="white" color="navy" size={35} />
+                  <label>Godwin Nwabunka Hall</label>
+                </div>
+                <div className={styles.first}>
+                  <Users fill="white" color="navy" size={35} />
+                  <label>Open to both students and staff</label>
+                </div>
+                <div className={styles.footer}>
+                  <br />
+                  <label>Join us for an impactful prayer session as we bask in God's</label>
+                  <br />
+                  <label>presence with an atmosphere of prayer and worship</label>
+                </div>
+              </div>
+            </div>
+
+            <div className={styles.loop}>
+              <div className={styles.topppp}></div>
+              <div className={styles.meeting}>
+                <label>Monthly Question And Answer</label>
+                <div className={styles.first}>
+                  <Calendar fill="white" color="navy" size={35} />
+                  <label>Every last Thursday of the month</label>
+                </div>
+                <div className={styles.first}>
+                  <Clock fill="none" color="navy" size={35} />
+                  <label>6:30pm-7:45pm</label>
+                </div>
+                <div className={styles.first}>
+                  <MapPin fill="white" color="navy" size={35} />
+                  <label>Godwin Nwabunka Hall</label>
+                </div>
+                <div className={styles.first}>
+                  <Users fill="white" color="navy" size={35} />
+                  <label>Open to both students and staff</label>
+                </div>
+                <div className={styles.footer}>
+                  <br />
+                  <label>Have and bugging questions about the Bible, Doctrine, Christianity?</label>
+                  <label>   Join us, as we by the spirit, give answers to your questions.</label>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-
-      {/* Primary events row */}
-      <div className={styles.weekly} role="list">
-        <article className={styles.loop} role="listitem">
-          <div className={styles.topp} aria-hidden="true"></div>
-
-          <div className={styles.meeting}>
-            <h3>Weekly Fellowship Meeting</h3>
-
-            <ul className={styles.details}>
-              <li className={styles.first}>
-                <Calendar fill="white" color="navy" size={28} />
-                <span>Every Thursday</span>
-              </li>
-
-              <li className={styles.first}>
-                <Clock fill="none" color="navy" size={28} />
-                <span>6:30pm-7:45pm</span>
-              </li>
-
-              <li className={styles.first}>
-                <MapPin fill="white" color="navy" size={28} />
-                <span>Godwin Nwabunka Hall</span>
-              </li>
-
-              <li className={styles.first}>
-                <Users fill="white" color="navy" size={28} />
-                <span>Open to both students and staff</span>
-              </li>
-            </ul>
-
-            <div className={styles.footer}>
-              <p>Join us for worship, biblical teaching, and fellowship. A great</p>
-              <p>way to connect with other students and grow in faith.</p>
-            </div>
-          </div>
-        </article>
-
-        <article className={styles.loop} role="listitem">
-          <div className={styles.toppppp} aria-hidden="true"></div>
-
-          <div className={styles.meeting}>
-            <h3>Campus Prayer Walk</h3>
-
-            <ul className={styles.details}>
-              <li className={styles.first}>
-                <Calendar fill="white" color="navy" size={28} />
-                <span>Every last Thursday of the semester</span>
-              </li>
-
-              <li className={styles.first}>
-                <Clock fill="none" color="navy" size={28} />
-                <span>6:00pm</span>
-              </li>
-
-              <li className={styles.first}>
-                <MapPin fill="white" color="navy" size={28} />
-                <span>Around the University</span>
-              </li>
-
-              <li className={styles.first}>
-                <Users fill="white" color="navy" size={28} />
-                <span>Open to both students and staff</span>
-              </li>
-            </ul>
-
-            <div className={styles.footer}>
-              <p>End the semster with prayer as we walk around campus, praying for our</p>
-              <p>   university, students, and as the spirit leads us.</p>
-            </div>
-          </div>
-        </article>
-      </div>
-
-      {/* Secondary events row */}
-      <div className={styles.week} role="list">
-        <article className={styles.loop} role="listitem">
-          <div className={styles.toppp} aria-hidden="true"></div>
-
-          <div className={styles.meeting}>
-            <h3>Monthly Prayer Meeting</h3>
-
-            <ul className={styles.details}>
-              <li className={styles.first}>
-                <Calendar fill="white" color="navy" size={28} />
-                <span>Every Second Thursday Of The Month</span>
-              </li>
-
-              <li className={styles.first}>
-                <Clock fill="none" color="navy" size={28} />
-                <span>6:30pm-7:45pm</span>
-              </li>
-
-              <li className={styles.first}>
-                <MapPin fill="white" color="navy" size={28} />
-                <span>Godwin Nwabunka Hall</span>
-              </li>
-
-              <li className={styles.first}>
-                <Users fill="white" color="navy" size={28} />
-                <span>Open to both students and staff</span>
-              </li>
-            </ul>
-
-            <div className={styles.footer}>
-              <p>Join us for an impactful prayer session as we bask in God's</p>
-              <p>presence with an atmosphere of prayer and worship</p>
-            </div>
-          </div>
-        </article>
-
-        <article className={styles.loop} role="listitem">
-          <div className={styles.topppp} aria-hidden="true"></div>
-
-          <div className={styles.meeting}>
-            <h3>Monthly Question And Answer</h3>
-
-            <ul className={styles.details}>
-              <li className={styles.first}>
-                <Calendar fill="white" color="navy" size={28} />
-                <span>Every last Thursday of the month</span>
-              </li>
-
-              <li className={styles.first}>
-                <Clock fill="none" color="navy" size={28} />
-                <span>6:30pm-7:45pm</span>
-              </li>
-
-              <li className={styles.first}>
-                <MapPin fill="white" color="navy" size={28} />
-                <span>Godwin Nwabunka Hall</span>
-              </li>
-
-              <li className={styles.first}>
-                <Users fill="white" color="navy" size={28} />
-                <span>Open to both students and staff</span>
-              </li>
-            </ul>
-
-            <div className={styles.footer}>
-              <p>Have and bugging questions about the Bible, Doctrine, Christianity?</p>
-              <p>   Join us, as we by the spirit, give answers to your questions.</p>
-            </div>
-          </div>
-        </article>
-      </div>
-    </section>
+    </>
   );
 }
->>>>>>> ae20c13
