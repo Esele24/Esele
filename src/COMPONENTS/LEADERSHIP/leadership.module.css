@@ -1,355 +1,149 @@
-.leadership{
-    /* background-color: red; */
-    width: auto;
-    height:227vh;
-    margin-top:-41px;
-}
-.begin{
-    /* background-color: blue; */
-    height: 48vh;
-    margin-bottom:10px;
-    align-items: center;
-    justify-content: center;
-    width:60vw;
-    margin-left:265px;
-    margin-top:21px;
-}
-.top{
-    /* background-color: yellow; */
-    height: 20vh;
-    width:40vw;
-    margin-left:140px;
-    margin-top:46px;
-    font-size: 3rem;
-}
-.txt{
-    font-size: 3rem;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-    margin-left:207px;
-    color:black;
-    font-family:Georgia, 'Times New Roman', Times, serif;
-}
-.fell{
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-    margin-left:124px;
-    color:  rgb(100, 30, 167);
-    font-family:Georgia, 'Times New Roman', Times, serif;
-    margin-top:90px;
-}
-.mission{
-    /* background-color: yellow; */
-    height: 15vh;
-    width:60vw;
-    margin-left:265px;
-    margin-top:-110px;
-    font-size: 1.3rem;
-    font-family:Georgia, 'Times New Roman', Times, serif;
-    text-align: center;
-}
-.text{
-    color:  rgb(100, 30, 167);
-}
-.mid{
-    color:  rgb(100, 30, 167);
-}
-.end{
-    color:  rgb(100, 30, 167);
-}
-.leaders{
-    /* background-color: blue; */
-    height:81vh;
-    width:93.7vw;
-    margin-left:33px;
-    display: flex;
-    gap:14px;
-    margin-top:50px;
-}
-.stack{
-    height:76vh;
-    width:27.6vw;
-    background-color: purple;
-    background-color: white;
-    margin-left:30px;
-    margin-top:22px; 
-    border-radius:10px;
-    transition: 0.3s;
-}
-.circle{
-    background-color: aqua;
-    background-color: rgb(100, 30, 167);
-    height:18vh;
-    width:9vw;
-    margin-top:22px;
-    margin-left:125px;
-    border-radius: 50%;
-    align-items: center;
-    justify-content: center;
-    display: flex;
-    margin-bottom:9px;
-}
-.esele{
-    height: 18vh;
-    width: 9vw;
-    border-radius: 50%;
-}
-.pre{
-    height: 18vh;
-    width: 9vw;
-    border-radius: 50%;
-}
-.triangle{
-    background-color: rgb(100, 30, 167);
-    height:12vh;
-    width:6vw;
-    margin-top:22px;
-    margin-left:100px;
-    border-radius: 50%;
-    align-items: center;
-    justify-content: center;
-    display: flex;
-    margin-bottom:22px;
-}
-.square{
-    background-color: aqua;
-    background-color: rgb(100, 30, 167);
-    height:18vh;
-    width:9vw;
-    margin-top:22px;
-    margin-left:125px;
-    border-radius: 50%;
-    align-items: center;
-    justify-content: center;
-    display: flex;
-    margin-bottom:9px;
-}
-.cube{
-    background-color: rgb(100, 30, 167);
-    height:12vh;
-    width:6vw;
-    margin-top:22px;
-    margin-left:100px;
-    border-radius: 50%;
-    align-items: center;
-    justify-content: center;
-    display: flex;
-    margin-bottom:22px;
-}
-.poi{
-    margin-top:30px;
-    margin-left:96px;
-    font-size:1.2rem;
-    font-weight: bold;
-}
-.poin{
-    /* margin-top:-740px;
-    margin-left:105px; */
-    font-size:1.2rem;
-    font-weight: bold;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    display: flex;
-}
-.poinn{
-    margin-top:-740px;
-    margin-left:100px;
-    font-size:1.2rem;
-    font-weight: bold;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
-.pointt{
-    margin-top:-740px;
-    margin-left:87.5px;
-    font-size:1.2rem;
-    font-weight: bold;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
-.sele{
-    /* margin-top:-740px;
-    margin-left:105px; */
-    /* margin-bottom:90px; */
-    font-size:1.2rem;
-    font-weight: bold;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    display: flex;
-    color:rgb(100, 30, 167);
-}
-.pele{
-    /* margin-top:-700px;
-    margin-left:120px;
-    margin-bottom:70px; */
-    display: flex;
-    font-size:1.2rem;
-    font-weight: bold;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    color:rgb(100, 30, 167);
-}
-.peele{
-    margin-top:-700px;
-    margin-left:130px;
-    margin-bottom:70px;
-    font-size:1.2rem;
-    font-weight: bold;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    color:rgb(100, 30, 167);
-}
-.pelles{
-    margin-top:-700px;
-    margin-left:100px;
-    margin-bottom:70px;
-    font-size:1rem;
-    font-weight: bold;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    color:rgb(100, 30, 167);
-}
-.gele{
-    margin-top:-700px;
-    margin-left:100px;
-    margin-bottom:70px;
-    font-size:1.2rem;
-    font-weight: bold;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    color:rgb(100, 30, 167);
-}
-.geles{
-    margin-top:-700px;
-    margin-left:78px;
-    margin-bottom:70px;
-    font-size:1.2rem;
-    font-weight: bold;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    color:rgb(100, 30, 167);
-}
-.cele{
-    margin-top:-700px;
-    margin-left:70px;
-    margin-bottom:70px;
-    font-size:1.2rem;
-    font-weight: bold;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    color:rgb(100, 30, 167);
-}
-.seles{
-    font-size:1rem;
-    font-weight: bold;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    display: flex;
-    color:rgb(139, 77, 196);
+/* simple, local module CSS for Leadership */
 
-}
-.peles{
-    font-size:1rem;
-    font-weight: bold;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    justify-content: center;
-    align-items: center;
+.leadership {
+    width: 100%;
+    padding: 3.5rem 1rem;
+    box-sizing: border-box;
+    background: #fff;
+  }
+  
+  .header {
+    max-width: 1100px;
+    margin: 0 auto 1rem;
     text-align: center;
-    color:rgb(139, 77, 196);
-    margin-left:114px;
-}
-.point{
-    font-size:0.9rem;
+  }
+  
+  .sectionTitle {
+    font-size: 2.2rem;
+    margin: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+  
+  .sectionSubtitle {
+    font-size: 2.4rem;
+    margin: 0.3rem 0 0;
+    color: rgb(100, 30, 167);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+  
+  .intro {
+    max-width: 900px;
+    margin: 0.6rem auto 0;
+    color: rgb(100, 30, 167);
+    font-size: 1.05rem;
+    line-height: 1.4;
+  }
+  
+  /* grid of leader cards */
+  .list {
+    max-width: 1100px;
+    margin: 1.5rem auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    box-sizing: border-box;
+  }
+  
+  /* card */
+  .card {
+    background: #fff;
+    border-radius: 10px;
+    padding: 1rem;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform .18s ease, box-shadow .18s ease;
+    min-height: 360px;
+  }
+  
+  .card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 18px 40px rgba(0,0,0,0.08);
+  }
+  
+  /* avatar */
+  .avatar {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    overflow: hidden;
+    background: rgb(100, 30, 167);
+    display: flex;
     align-items: center;
     justify-content: center;
-    margin-top:5px;
-    display: flex;
+    margin-bottom: 0.6rem;
+  }
+  
+  .avatarImg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+  
+  /* info */
+  .info {
+    text-align: center;
+    width: 100%;
+  }
+  
+  .name {
+    margin: 0.2rem 0;
+    font-size: 1.05rem;
+    font-weight: 700;
+  }
+  
+  .role {
+    margin: 0;
     color: rgb(100, 30, 167);
-}
-.mal{
-    /* background-color: red; */
-    height:9vh;
-    width:5vw;
-    margin-left:20px;
+    font-weight: 600;
+  }
+  
+  .degree {
+    margin: 0.2rem 0 0.6rem;
+    color: rgb(139, 77, 196);
+    font-weight: 600;
+  }
+  
+  /* bio */
+  .bio p {
+    margin: 0;
+    color: rgb(100, 30, 167);
+    font-size: 0.95rem;
+    line-height: 1.35;
+  }
+  
+  /* contact block (stack vertically) */
+  .contact {
+    margin-top: 0.8rem;
     display: flex;
     flex-direction: column;
-    margin-top:18px;
-    gap:12px;
-}
-.mall{
-    /* background-color: red; */
-    height:9vh;
-    width:5vw;
-    margin-left:20px;
-    display: flex;
-    flex-direction: column;
-    margin-top:-21px;
-    gap:12px;
-}
-.malll{
-    /* background-color: red; */
-    height:9vh;
-    width:5vw;
-    margin-left:20px;
-    display: flex;
-    flex-direction: column;
-    margin-top:-14px;
-    gap:12px;
-}
-.pop{
-    margin-left:40px;
-    margin-top:17px;
-    margin-bottom:-40px;
-    color:navy;
+    gap: 0.45rem;
+    align-items: center;
+  }
+  
+  .contactLink {
+    display: inline-flex;
+    gap: 0.5rem;
+    align-items: center;
+    color: navy;
     text-decoration: none;
-}
-.popp{
-    margin-left:40px;
-    margin-top:17px;
-    margin-bottom:-40px;
-    color:navy;
-}
-.link{
-    text-decoration: none;
-    color:navy;
-}
-.mal label{
-    margin-top:10px;
-    font-size:1rem;
-}
-.mall label{
-    font-size:1.1rem;
-}
-.malll label{
-    font-size:1rem;
-}
-.stack:hover{
-    transform: scale(1.01, 1.01);
-    box-shadow: 1px 2px 5px 1px rgb(125, 84, 163);
-    margin-top: 11px;
-    cursor: pointer;
-}
+    font-weight: 600;
+    font-size: 0.98rem;
+  }
+  
+  /* responsive */
+  @media (max-width: 980px) {
+    .list { grid-template-columns: repeat(2, 1fr); }
+    .avatar { width: 120px; height: 120px; }
+  }
+  
+  @media (max-width: 560px) {
+    .list { grid-template-columns: 1fr; }
+    .avatar { width: 100px; height: 100px; }
+    .sectionTitle { font-size: 1.8rem; }
+    .sectionSubtitle { font-size: 2rem; }
+    .intro { font-size: 1rem; }
+  }
+  
