@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-.nav{
-=======
 .nav {
->>>>>>> ae20c13
     background-color: white;
     height: 10vh;
     width: 100%;
@@ -12,65 +8,12 @@
     position: fixed;
     top: 0;
     z-index: 500;
-<<<<<<< HEAD
-}
-.menu{
-    display: flex;
-    height: 9vh;
-    margin-top:3px;
-    margin-left:3px;
-    width:17vw;
-    gap:8px;
-}
-.menu img{
-    margin-top:10px;
-}
-.menu label{
-    margin-top:10px;
-    font-size: 1.7rem;
-    font-family:'Times New Roman', Times, serif;
-    color: rgb(100, 30, 167);
-}
-.firstimg{
-    border-radius: 50%;
-}
-.middlesection{
-    height:9vh;
-    width:46vw;
-    margin-top:3px;
-    display: flex;
-    gap:20px;
-    margin-left:155px;
-}
-.middlesection label{
-    font-family:'Times New Roman', Times, serif;
-    margin-left:20px;
-    margin-top:15px;
-    font-size: 1.2rem;
-    color:black;
-    text-decoration:none;
-}
-.link{
-    text-decoration: none;
-    color:black;
-}
-.link:hover{
-    color: navy;
-}
-.button{
-    height:9vh;
-    width:16vw;
-    margin-top:3px;
-    margin-left: 110px;
-}
-.click{
-=======
+
     padding: 0 30px;
   }
   
   .left_section {
     display: flex;
->>>>>>> ae20c13
     align-items: center;
     gap: 8px;
     width: 20%;

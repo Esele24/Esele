@@ -1,183 +1,195 @@
-.about{
+
+/* SECTION WRAP */
+.about {
   background-color: rgb(234, 234, 243);
-  height: 230vh;
+  width: 100%;
+  padding: 4rem 1rem; /* comfortable vertical spacing */
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* INTRO / TITLE AREA */
+.begin {
+  width: 90%;
+  max-width: 1100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.4rem;
+  margin-bottom: 1.5rem;
+}
+
+.top {
   width: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-}
-@media (max-width: 768px){
-  .objectives{
-      display: flex;
-      flex-direction: column;
-  }
-  .stack{
-      width: 100%;
-  }
-  .yours{
-      display: flex;
-      flex-direction: column;
-  }
-  .founders{
-      height:40vh;
-      background-color: red;
-      width: 20vw;
-  }
-}
-.begin{
-  height: 48vh;
-  align-items: center;
-  display: flex;
-  margin-top:-70px;
-  justify-content: center;
-  flex-direction: column;
-  width:60vw;
-}
-.found{
-  color: rgb(100, 30, 167);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size:1.3rem;
-}
-.yours{
-  display: flex;
-  gap:9px;
-  font-size:1.4rem;
-  justify-content: center;
-  align-items: center;
-}
-.founds{
-  color: rgb(100, 30, 167);
-}
-.top{
-  height: 20vh;
-  width:40vw;
-  font-size: 3rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-}
-.txt{
-  font-size: 3rem;
   text-align: center;
-  align-items: center;
-  justify-content: center;
-  display: flex;
-  color:black;
-  font-family:Georgia, 'Times New Roman', Times, serif;
+  gap: 0.25rem;
 }
-.fell{
-  text-align: center;
-  align-items: center;
-  justify-content: center;
-  display: flex;
-  color:  rgb(100, 30, 167);
-  font-family:Georgia, 'Times New Roman', Times, serif;
+
+/* keep your labels/text unchanged — just style */
+.txt {
+  font-size: 2.2rem;
+  color: #000;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  margin: 0;
 }
-.mission{
-  height: 15vh;
-  width:60vw;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top:20px;
-  flex-direction: column;
-  font-size: 1.3rem;
-  font-family:Georgia, 'Times New Roman', Times, serif;
-  text-align: center;
-}
-.text, .mid, .end{
-  color:  rgb(100, 30, 167);
-}
-.objectives{
-  height:69vh;
-  width:100%;
-  display: flex;
-  gap:23px;
-  align-items: center;
-  justify-content: center;
-}
-.stack{
-  height:46vh;
-  width:21vw;
-  background-color: white;
-  border-radius:10px;
-  justify-content: center;
-  align-items: center;
-  display:flex;
-  flex-direction: column;
-  transition: 0.3s;
-  gap:30px;
-}
-.circle, .triangle, .square, .cube{
-  background-color: rgb(100, 30, 167);
-  height:12vh;
-  width:6vw;
-  border-radius: 50%;
-  align-items: center;
-  justify-content: center;
-  display: flex;
-  flex-direction: column;
-}
-.poi, .poii, .poiii, .poin, .point{
-  font-size:1.2rem;
-  align-items: center;
-  justify-content: center;
-  display: flex;
+
+.fell {
+  font-size: 2.4rem;
   color: rgb(100, 30, 167);
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  margin: 0;
 }
-.stack:hover{
-  transform: scale(1.01, 1.01);
-  box-shadow: 1px 2px 5px 1px rgb(125, 84, 163);
-  margin-top: -11px;
+
+/* MISSION PARAGRAPHS */
+.mission {
+  width: 100%;
+  max-width: 820px;
+  margin-top: 0.8rem;
+  font-size: 1.05rem;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  text-align: center;
+  color: rgb(100, 30, 167);
+  line-height: 1.5;
+}
+
+/* OBJECTIVES CARDS WRAP */
+.objectives {
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap; /* allows cards to wrap on small screens */
+  justify-content: center;
+  margin: 2rem 0;
+  box-sizing: border-box;
+}
+.faith{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* SINGLE CARD */
+.stack {
+  background: #fff;
+  border-radius: 10px;
+  padding: 1.2rem;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+  flex: 1 1 240px; /* flexible - min width ~240px */
+  max-width: 280px;
+  min-height: 180px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.06);
+  transition: transform 180ms ease, box-shadow 180ms ease;
+  flex-direction: column;
+}
+
+/* simple hover */
+.stack:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 14px 30px rgba(0,0,0,0.08);
   cursor: pointer;
 }
-.midd{
-  background-color:  rgb(100, 30, 167);
-  height: 35vh;
-  width:60vw;
-  border-radius:9px;
+
+/* ICON CIRCLE */
+.circle,
+.triangle,
+.square,
+.cube {
+  background-color: rgb(100, 30, 167);
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+/* title inside card */
+.poin, .poi, .poii, .poiii {
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: #222;
+  margin-bottom: 0.25rem;
+}
+
+/* bullet lines inside card */
+.point {
+  font-size: 0.95rem;
+  color: rgb(100, 30, 167);
+  line-height: 1.45;
+  margin: 0;
+
+}
+
+/* MISSION / VISION BLOCKS (middle & bottom) */
+.midd, .pop {
+  width: 90%;
+  max-width: 1000px;
+  background-color: rgb(100, 30, 167);
+  color: #fff;
+  border-radius: 8px;
+  padding: 1.25rem;
+  margin-top: 1rem;
+  box-sizing: border-box;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  gap: 0.6rem;
   align-items: center;
 }
-.tyype, .type{
-  width:20vw;
-  align-items: center;
-  justify-content: center;
+
+.tyype, .type {
+  width: 100%;
   display: flex;
+  justify-content: center;
 }
-.types, .typess{
-  width:55vw;
-  align-items: center;
-  justify-content: center;
-  height:10vh;
-  margin-top:30px;
-  display: flex;
+
+.tyype label, .type label {
+  font-size: 1.6rem;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  margin: 0;
 }
-.pop{
-  background-color:  rgb(100, 30, 167);
-  height: 35vh;
-  width:60vw;
-  border-radius:9px;
+
+.types, .typess {
+  width: 100%;
   display: flex;
-  align-items: center;
   justify-content: center;
-  flex-direction: column;
+  margin-top: 0.25rem;
 }
-.founders{
-  background-color: white;
-  margin-top:-20px;
-  height: 20vh;
-  width:60vw;
-  display: flex;
-  justify-content: center;
-  border-radius: 10px;
-  align-items: center;
-  flex-direction: column;
-  gap:7px;
+
+.types label, .typess label {
+  color: #fff;
+  font-size: 1rem;
+  text-align: center;
+  display: block;
+  line-height: 1.5;
+  max-width: 900px;
+}
+
+/* small screens */
+@media (max-width: 900px) {
+  .txt { font-size: 1.9rem; }
+  .fell { font-size: 2rem; }
+  .mission { font-size: 1rem; max-width: 600px; }
+  .stack { flex: 1 1 45%; max-width: 46%; min-height: 160px; }
+  .circle, .triangle, .square, .cube { width: 56px; height: 56px; }
+}
+
+@media (max-width: 560px) {
+  .begin { width: 95%; padding: 0 0.5rem; }
+  .stack { flex: 1 1 100%; max-width: 100%; }
+  .txt { font-size: 1.6rem; }
+  .fell { font-size: 1.8rem; }
+  .types label, .typess label { font-size: 0.95rem; }
+  .midd, .pop { padding: 1rem; }
 }
