@@ -1,141 +1,92 @@
-<<<<<<< HEAD
-.image{
-    width: 100%;
-=======
-.imageBackground {
-    background: url(/gathering.jpg);
-    height: 90vh;
-    width: 100%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: flex;
-    flex-direction: column;
-    justify-content: center; /* vertically center text */
-    align-items: center;     /* horizontally center text */
-    text-align: center;
->>>>>>> ae20c13
-    position: relative;
-    padding: 0 1.5rem; /* keep safe spacing on smaller screens */
-  }
-  
-  /* Add a subtle overlay for readability */
-  .imageBackground::before {
-    content: "";
-    position: absolute;
-<<<<<<< HEAD
-    width:60vw; 
-    top: -5%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    z-index: 20;
-    font-size: 5.5rem;
-    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+/* src/COMPONENTS/BACKGROUND/background.module.css */
+/* Keep your styles — cleaned from conflict markers */
+
+.image {
+  width: 100%;
+  position: relative;
+  padding: 0 1.5rem; /* keep safe spacing on smaller screens */
 }
-.fel{
-    color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+
+/* subtle overlay for readability (keeps HEAD behavior) */
+.image::before {
+  content: "";
+  position: absolute;
+  width: 60vw;
+  top: -5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  z-index: 20;
+  font-size: 5.5rem;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  inset: 0; /* cover area if needed but z-index kept high for your text */
+  pointer-events: none;
 }
-.bottom{
-    color:rgb(241, 181, 69);
-    display: flex;
-    justify-content: center;
-    align-items: center;
+
+/* Headline + sub text */
+.fel {
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.first{
-    font-size:1.5rem;
-    color: white;
-    margin-top:15px;
-    text-align: center;
+
+.bottom {
+  color: rgb(241, 181, 69);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.second{
-    font-size:1.5rem;
-    color: white;
-    margin-top:-110px;
-    text-align: center;
+
+/* hero paragraphs */
+.first,
+.second,
+.third {
+  font-size: 1.5rem;
+  color: white;
+  text-align: center;
 }
-.third{
-    font-size:1.5rem;
-    color: white;
-    margin-top:-110px;
-    text-align: center;
+
+.first { margin-top: 15px; }
+.second { margin-top: -110px; }
+.third  { margin-top: -110px; }
+
+/* layout for the below text */
+.below {
+  height: 26vh;
+  width: 60vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: -150px;
 }
-.below{
-    height:26vh;
-    width:60vw;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin-top:-150px;
+
+/* CTA button */
+.join {
+  background-color: rgb(243, 177, 56);
+  height: 7.5vh;
+  width: 17vw;
+  border-radius: 10px;
+  border: none;
+  font-size: 1rem;
+  color: white;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  z-index: 22;
 }
-.join{
-    background-color: rgb(243, 177, 56);
-    height:7.5vh;
-    width:17vw;
-    border-radius:10px;
-    border:none;
-    font-size:1rem;
-    color:white;
-    align-items: center;
-    display: flex;
-    justify-content: center;
+.join:hover {
+  transform: scale(1.02, 1.02);
+  background-color: rgb(120, 37, 37);
+  cursor: pointer;
 }
-.join:hover{
-    transform: scale(1.02,1.02);
-    background-color: rgb(120, 37, 37);
-    cursor: pointer;
+
+/* responsive tweaks (keep them later if you want) */
+@media (max-width: 900px) {
+  .first, .second, .third { font-size: 1.15rem; margin-top: 0; }
+  .below { width: 90%; margin-top: -50px; }
+  .join { width: 40vw; }
 }
-=======
-    inset: 0;
-    background: rgba(0, 0, 0, 0.45); /* dark overlay */
-    z-index: 1;
-  }
-  
-  .faithMessage {
-    font-size: 3rem;
-    font-weight: 700;
-    color: #fff;
-    text-shadow: 0 4px 12px rgba(0,0,0,0.6);
-    margin-bottom: 1rem;
-    position: relative;
-    z-index: 2;
-  }
-  
-  .faithMessage .bottom {
-    color: #fbbf24; /* golden highlight */
-  }
-  
-  .herotext {
-    font-size: 1.25rem;
-    line-height: 1.7;
-    color: #e5e5e5;
-    max-width: 700px;
-    margin: 0 auto 2rem;
-    position: relative;
-    z-index: 2;
-  }
-  
-  .join {
-    background: #fbbf24;
-    color: #111;
-    font-size: 1.1rem;
-    font-weight: 600;
-    padding: 0.8rem 2rem;
-    border-radius: 999px;
-    border: none;
-    cursor: pointer;
-    position: relative;
-    z-index: 2;
-    transition: all 0.3s ease;
-  }
-  
-  .join:hover {
-    background: #d97706;
-    color: #fff;
-  }
-  
->>>>>>> ae20c13
