@@ -5,7 +5,7 @@ import styles from "./navbar.module.css";
 
 import { Menu, X } from "lucide-react";
 
-export function Navbar() {
+export function Navbar({}) {
   const [isOpen, setIsOpen] = useState(false);
 
   return (

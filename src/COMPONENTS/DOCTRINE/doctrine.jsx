@@ -14,7 +14,7 @@ const DOCTRINES = [
       `"We believe strongly in the fact that the world was ravaged by sin, and`,
       `to that end, God sent his son Jesus Christ to die for humanity, whom`,
       `in turn obtained an eternal redemption for us, that we are no longer`,
-      `slaves to sin, but have become the righteousness of God in Christ Jesus"`,
+      `slaves to sin, but have become the righteousness of God in Christ Jesus."`,
     ],
     scripture: "John 3:16, Hebrews 9:12, Romans 6:6, Ephesians 1:7, Colossians 1:20",
   },
@@ -41,10 +41,10 @@ const DOCTRINES = [
   {
     title: "CONSECRATION",
     lines: [
-      `"We believe that as Chritians, we should be set apart, separate from `,
+      `"We believe that as Christians, we should be set apart, separate from `,
       `those that are 'without'. We believe that as Christians, for the sake of`,
       `our relationship with God, we should take some certain steps, be`,
-      `separated, be a vessel through which God can flow through etc."`,
+      `separated, be a vessel through which God can flow through, etc."`,
     ],
     scripture: "1st Timothy 2:19-21, Leviticus 20:7-8, Romans 12:1-2",
   },
@@ -57,6 +57,16 @@ const DOCTRINES = [
       `and establish his dominion forever."`,
     ],
     scripture: "Matthew 24:20, Luke 21:27, Revelation 16:15",
+  },
+  {
+    title: "WATER BAPTISM",
+    lines: [
+      `"We believe in the mystery of baptism by immersion. we`,
+      `believe in baptism being a type and shadow of us`,
+      `being buried with Christ and raised up with him`,
+      `and in the same vein, old things are passed away."`,
+    ],
+    scripture: "Acts 2:38, Romans 6:3-4, Colossians 2:!2",
   },
 ];
 
@@ -85,19 +95,22 @@ export function Doctrine() {
           </span>
           <br />
           <span className={styles.end}>
-            and distinguishes us from other religons
+            and distinguishes us from other religons.
           </span>
         </p>
       </header>
 
       <div className={styles.grid}>
         {DOCTRINES.map((d, idx) => (
+          
           <article key={d.title} className={styles.card} aria-labelledby={`doc-${idx}`}>
+         
             <h3 id={`doc-${idx}`} className={styles.cardTitle}>
               {d.title}
             </h3>
 
             <div className={styles.cardBody}>
+                 
               {d.lines.map((line, i) => (
                 <p key={i} className={styles.paragraph}>
                   {line}
@@ -105,8 +118,11 @@ export function Doctrine() {
               ))}
 
               <p className={styles.scripture}>{d.scripture}</p>
+               
             </div>
+            
           </article>
+         
         ))}
       </div>
     </section>

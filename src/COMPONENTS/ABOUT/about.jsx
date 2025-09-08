@@ -21,7 +21,7 @@ export function About({}) {
         <div className={styles.bottom}>
           <div className={styles.mission}>
             <p className={styles.text}>
-              We are a diverse community of university students united by our faith in Jesus Christ.
+              We are a diverse community of Topfaith yuniversity students united by our faith in Jesus Christ.
             </p>
 
             <p className={styles.mid}>
@@ -31,6 +31,16 @@ export function About({}) {
             <p className={styles.end}>
               relationships, and purposeful living during your university journey.
             </p>
+          </div>
+          <div className={styles.missions}>
+            <p className={styles.text}>
+              Our Founders
+            </p>
+
+            <p className={styles.miid}>
+              Marylyn A. Ibem, Precious N. Onah, Mfonido O. Akpabio, Imadara O. Akpabio
+            </p>
+
           </div>
         </div>
       </header>
@@ -114,7 +124,6 @@ export function About({}) {
         <h4 id="vision-heading" className={styles.type}>
           Our Vision
         </h4>
-
         <p>
             "We see a time when nobody would need to tell the students of
             Topfaith University about Christ, because they will all know him

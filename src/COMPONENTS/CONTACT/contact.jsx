@@ -3,7 +3,6 @@ import { MapPin, Clock, Mail, Phone, Instagram } from "lucide-react";
 import { FaYoutube } from "react-icons/fa6";
 import { FaSpotify } from "react-icons/fa";
 import Link from "next/link";
-
 const infoCards = [
   {
     title: "Meeting Location",
@@ -20,12 +19,12 @@ const infoCards = [
     ],
   },
   {
-    title: "Mail US",
+    title: "Mail Us",
     icon: Mail,
     lines: [
       "info.tufellowships@gmail.com",
-      "president.tufellowships@gmail.com",
-      "pro.tufellowships@gmail.com",
+      "202300112@topfaith.edu.ng",
+      "202200179@topfaith.edu.ng",
     ],
   },
   {
@@ -108,7 +107,7 @@ export function Contact() {
                 <div className={styles.icon}>
                   <Icon fill="navy" color="white" size={40} className={styles.op} />
                 </div>
-
+              
                 <div className={styles.texts}>
                   <div className={styles.label}><strong>{card.title}</strong></div>
                   <div className={styles.labels}>

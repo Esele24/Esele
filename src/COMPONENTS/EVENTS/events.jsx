@@ -17,7 +17,7 @@ export function Events() {
       <div className={styles.bottom}>
         <p className={styles.mission}>
           <span className={styles.text}>
-            Join us for meaningful gatherings that strengthen our faith and build community. Al
+            Join us for meaningful gatherings that strengthen our faith and build community. All
           </span>
           <br />
           <span className={styles.mid}>
@@ -131,7 +131,7 @@ export function Events() {
 
             <div className={styles.footer}>
               <p>Join us for an impactful prayer session as we bask in God's</p>
-              <p>presence with an atmosphere of prayer and worship</p>
+              <p>presence with an atmosphere of prayer and worship.</p>
             </div>
           </div>
         </article>

@@ -79,12 +79,14 @@
     flex-direction: column;
     gap: 0.35rem;
   }
-  
+  .smallTitle{
+    font-size:2.3rem;
+  }
   .paragraph {
     margin: 0;
     font-size: 0.98rem;
     line-height: 1.45;
-    text-align: left;
+    text-align: center;
   }
   
   .scripture {
@@ -92,7 +94,7 @@
     font-size: 0.9rem;
     font-weight: 600;
     opacity: 0.95;
-    text-align: left;
+    text-align: center;
   }
   
   /* responsiveness */

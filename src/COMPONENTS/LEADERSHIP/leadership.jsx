@@ -11,7 +11,7 @@ const leaders = [
     bioLines: [
       "Passionate about creating inclusive",
       "spaces for spiritual growth and",
-      "community building",
+      "community building.",
     ],
     email: "202300112@topfaith.edu.ng",
     insta: "https://instagram.com/eseleokogbo",
@@ -41,7 +41,7 @@ const leaders = [
     role: "Secretary General",
     degree: "LL.B Law (in view)",
     bioLines: [
-      "Dedicated to grooming sstudents'",
+      "Dedicated to grooming students'",
       "spiritual life through discipleship, mentorship",
       "and fellowship.",
     ],
@@ -57,9 +57,9 @@ const leaders = [
     role: "Deputy Secratary General",
     degree: "LL.B Law (in view)",
     bioLines: [
-      "Passionate about souls,prayer,worship",
+      "Passionate about souls, prayer, worship",
       "word study, and creating an enabling",
-      "environment for peopele to grow in the faith",
+      "environment for peopele to grow in the faith.",
     ],
     email: "202300062@topfaith.edu.ng",
     insta: "https://instagram.com/chibuikem_egwu",
@@ -74,8 +74,8 @@ const leaders = [
     degree: "LL.B Law (in view)",
     bioLines: [
       "Keeping financial records",
-      "safe, secure and ",
-      "fostering accountability",
+      "safe, secure and",
+      "fostering accountability.",
     ],
     email: "202200098@topfaith.edu.ng",
     insta: "https://instagram.com/michaelprecious727",
@@ -91,7 +91,7 @@ const leaders = [
     bioLines: [
       "Ensuring healthy PR between fellowship, its",
       "members, the school, friends",
-      "families, and thw rold at large",
+      "families, and the world at large.",
     ],
     email: "202200179@topfaith.edu.ng",
     insta: "https://instagram.com/_s.u.x.y_",
@@ -106,7 +106,7 @@ function LeaderCard({ person }) {
   return (
     <article className={styles.card} role="listitem">
       <div className={styles.avatar}>
-        <img src={person.img} alt={person.imgAlt} className={styles.avatarImg} />
+        <img src={person.img} alt={person.imgAlt} className={styles.avatarImg}/>
       </div>
 
       <div className={styles.info}>
