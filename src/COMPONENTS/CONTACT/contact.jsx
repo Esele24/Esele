@@ -2,7 +2,14 @@ import styles from "./contact.module.css";
 import { MapPin, Clock, Mail, Phone, Instagram } from "lucide-react";
 import { FaYoutube } from "react-icons/fa6";
 import { FaSpotify } from "react-icons/fa";
+// import { useForm, ValidationError } from '@formspree/react';
 import Link from "next/link";
+// function ContactForm() {
+//   const [state, handleSubmit] = useForm("xwprpeql");
+//   if (state.succeeded) {
+//       return <p>Thanks for joining!</p>;
+//   }
+// }
 const infoCards = [
   {
     title: "Meeting Location",
@@ -61,7 +68,7 @@ export function Contact() {
         <article className={styles.send} aria-labelledby="contact-form-title">
           <h3 id="contact-form-title" className={styles.message}>Send Us a Message</h3>
 
-          <form className={styles.form} action="" onSubmit={(e) => e.preventDefault()}>
+          <form className={styles.form} action="https://formspree.io/f/xwprpeql" method="POST" onSubmit={(e) => e.preventDefault()}>
             <div className={styles.display}>
               <div className={styles.name}>
                 <label htmlFor="firstName">First Name</label>

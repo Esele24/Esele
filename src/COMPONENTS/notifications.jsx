@@ -1,24 +1,24 @@
-import React from 'react'
-import { LuMessageCircle } from "react-icons/lu";
-import { useState } from 'react';
-export default function Notifications({unreadMessages}) {
-    const [unreadMessages, setunreadMessages] = React.useState(0)
-    if (unreadMessages === 0){
-        <p>You have no unread message</p>
-    } else if(unreadMessages === 1){
-        <p>You have 1 unread message</p>
-    } else {
-        return <p>You have ({unreadMessages}) unread messages</p>
-    }
-}
-    return (
-        <div>
-            <Notification unreadMessages = {unreadMessages}/>
-            <button onClick = {()=> setunreadMessages(unreadMessages + 1)}>
-                Increment unread messages
-            </button>
-        </div>
-    )
+// import React from 'react'
+// import { LuMessageCircle } from "react-icons/lu";
+// import { useState } from 'react';
+// export default function Notifications({unreadMessages}) {
+//     const [unreadMessages, setunreadMessages] = React.useState(0)
+//     if (unreadMessages === 0){
+//         <p>You have no unread message</p>
+//     } else if(unreadMessages === 1){
+//         <p>You have 1 unread message</p>
+//     } else {
+//         return <p>You have ({unreadMessages}) unread messages</p>
+//     }
+// }
+//     return (
+//         <div>
+//             <Notification unreadMessages = {unreadMessages}/>
+//             <button onClick = {()=> setunreadMessages(unreadMessages + 1)}>
+//                 Increment unread messages
+//             </button>
+//         </div>
+//     )
     // <div className='relative w-4 mt-6  '>
     //     <LuMessageCircle/>
     //     <p className=" absolute -right-2 top-0 h-3 w-3 rounded-full bg-blue-700 flex justify-center items-center text-white text-[8px]">1</p>

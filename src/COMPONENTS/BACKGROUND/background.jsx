@@ -1,30 +1,36 @@
 import styles from "./background.module.css";
 import { motion } from "framer-motion";
-export function Background ({}){
+export function Background (){
     return(
         <>
         <div className={styles.imageBackground}>
             <p className={styles.faithMessage}>
-                              <motion.p
+                              <motion.o
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
-        transition={{ delay: 0.1, duration: 0.5, ease: "easeOut" }} // delay for a stagger effect
+        transition={{ delay: 0.8, duration: 2.0, ease: "easeOut" }} // delay for a stagger effect
         className="mt-4 text-lg text-gray-600"
       >
                 Fellowship 
-                   </motion.p>
+                   </motion.o>
                 <span className={styles.bottom}>
-                     <motion.p
+                     <motion.o
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ delay: 0.8, duration: 2.0, ease: "easeOut"}} // delay for a stagger effect
+        className="mt-4 text-lg text-gray-600"
+      >
+                    & Faith 
+                </motion.o>
+                    </span>   
+            </p>
+            <div className={styles.herotext}>
+                     <motion.o
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 0.1, duration: 0.5, ease: "easeOut"}} // delay for a stagger effect
         className="mt-4 text-lg text-gray-600"
       >
-                    & Faith 
-                </motion.p>
-                    </span>   
-            </p>
-            <div className={styles.herotext}>
                 <p>
                     Join our vibrant community of faith where students gather to 
                 </p>
@@ -34,6 +40,7 @@ export function Background ({}){
                 <p>
                     purpose for their lives.
                 </p>
+                  </motion.o>
             </div>
             
             <button className={styles.join}>

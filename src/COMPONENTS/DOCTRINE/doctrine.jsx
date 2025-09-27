@@ -66,7 +66,7 @@ const DOCTRINES = [
       `being buried with Christ and raised up with him`,
       `and in the same vein, old things are passed away."`,
     ],
-    scripture: "Acts 2:38, Romans 6:3-4, Colossians 2:!2",
+    scripture: "Acts 2:38, Romans 6:3-4, Colossians 2:12",
   },
 ];
 

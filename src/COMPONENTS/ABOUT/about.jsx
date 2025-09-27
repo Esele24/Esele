@@ -4,7 +4,7 @@ import { BookOpen } from "lucide-react";
 import { Star } from "lucide-react";
 import { Users } from "lucide-react";
 
-export function About({}) {
+export function About() {
   return (
     <section className={styles.about} id="about-section" aria-labelledby="about-heading">
       {/* Intro / Header */}

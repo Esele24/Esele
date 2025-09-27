@@ -32,6 +32,8 @@
     margin-bottom: 1rem;
     position: relative;
     z-index: 2;
+    display: flex;
+    gap:9px;
   }
   
   .faithMessage .bottom {
