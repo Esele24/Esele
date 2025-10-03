@@ -210,3 +210,25 @@
   .types label, .typess label { font-size: 0.95rem; }
   .midd, .pop { padding: 1rem; }
 }
+
+
+.founders{
+  display: flex;
+
+}
+
+.founders div{
+  /* background-color: green; */
+  white-space: nowrap;
+  border: 1px solid rgba(0,0,0,0.1);
+  padding: 20px;
+  margin: 10px;
+  border-radius: 10px;
+}
+
+.founderText{
+  font-weight: bold;
+  font-size: 1.7rem;
+  margin-top: 40px;
+  text-align: center;
+}

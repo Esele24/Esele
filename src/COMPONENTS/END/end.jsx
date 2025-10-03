@@ -23,7 +23,7 @@ export function End() {
         <div className={styles.campuss}>
           <h3 className={styles.campss}>Quick Links</h3>
           <ul className={styles.linkList}>
-            <li><Link href="#nav-section" className={styles.links}>Home</Link></li>
+            <li><Link href="#home" className={styles.links}>Home</Link></li>
             <li><Link href="#about-section" className={styles.links}>About</Link></li>
             <li><Link href="#event-section" className={styles.links}>Events</Link></li>
             <li><Link href="#leadership-section" className={styles.links}>Leadership</Link></li>

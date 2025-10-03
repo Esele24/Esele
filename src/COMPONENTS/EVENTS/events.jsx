@@ -32,7 +32,7 @@ export function Events() {
           <div className={styles.topp} aria-hidden="true"></div>
 
           <div className={styles.meeting}>
-            <h3>Weekly Fellowship Meeting</h3>
+            <h2>Weekly Fellowship Meeting</h2>
 
             <ul className={styles.details}>
               <li className={styles.first}>
@@ -67,7 +67,7 @@ export function Events() {
           <div className={styles.toppppp} aria-hidden="true"></div>
 
           <div className={styles.meeting}>
-            <h3>Campus Prayer Walk</h3>
+            <h2>Campus Prayer Walk</h2>
 
             <ul className={styles.details}>
               <li className={styles.first}>
@@ -105,7 +105,7 @@ export function Events() {
           <div className={styles.toppp} aria-hidden="true"></div>
 
           <div className={styles.meeting}>
-            <h3>Monthly Prayer Meeting</h3>
+            <h2>Monthly Prayer Meeting</h2>
 
             <ul className={styles.details}>
               <li className={styles.first}>
@@ -140,7 +140,7 @@ export function Events() {
           <div className={styles.topppp} aria-hidden="true"></div>
 
           <div className={styles.meeting}>
-            <h3>Monthly Question And Answer</h3>
+            <h2>Monthly Question And Answer</h2>
 
             <ul className={styles.details}>
               <li className={styles.first}>

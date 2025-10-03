@@ -8,6 +8,9 @@ export function About() {
   return (
     <section className={styles.about} id="about-section" aria-labelledby="about-heading">
       {/* Intro / Header */}
+
+     
+
       <header className={styles.begin}>
         <div className={styles.top}>
           <h2 id="about-heading" className={styles.txt}>
@@ -32,16 +35,31 @@ export function About() {
               relationships, and purposeful living during your university journey.
             </p>
           </div>
-          <div className={styles.missions}>
-            <p className={styles.text}>
-              Our Founders
+
+
+
+          <div className={styles.mission3ccccs}>
+
+            <p className={styles.founderText}>
+              <b>Our Founders</b>
             </p>
 
-            <p className={styles.miid}>
-              Marylyn A. Ibem, Precious N. Onah, Mfonido O. Akpabio, Imadara O. Akpabio
-            </p>
+
+            <marquee behavior="" scrollamount="8" width="100%">
+              <div className={styles.founders}>
+              <div>Marylyn A. Ibem</div>
+              <div>Precious N. Onah</div>
+              <div>Mfonido O. Akpabio</div>
+              <div>Imadara O. Akpabio</div>
+             
+            </div>
+            </marquee>
+
 
           </div>
+
+
+
         </div>
       </header>
 

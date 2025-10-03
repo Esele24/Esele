@@ -4,10 +4,14 @@
   margin: 0;
   /* outline: 2px solid red; */
 }
+
+html{
+  scroll-behavior: smooth;
+}
 body{
   background-color: rgb(219, 219, 239);
-  scroll-behavior: smooth;
   width: 100%;
+  scroll-behavior: smooth !important;
 } 
 /* body.light {
   background-color: white;
@@ -17,3 +21,5 @@ body.dark {
   background-color: #121212;
   color: white;
 } */
+
+

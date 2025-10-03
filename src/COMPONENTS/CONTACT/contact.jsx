@@ -2,14 +2,7 @@ import styles from "./contact.module.css";
 import { MapPin, Clock, Mail, Phone, Instagram } from "lucide-react";
 import { FaYoutube } from "react-icons/fa6";
 import { FaSpotify } from "react-icons/fa";
-// import { useForm, ValidationError } from '@formspree/react';
 import Link from "next/link";
-// function ContactForm() {
-//   const [state, handleSubmit] = useForm("xwprpeql");
-//   if (state.succeeded) {
-//       return <p>Thanks for joining!</p>;
-//   }
-// }
 const infoCards = [
   {
     title: "Meeting Location",
@@ -45,7 +38,7 @@ const infoCards = [
   },
 ];
 
-export function Contact() {
+export function Contact({}) {
   return (
     <section className={styles.contact} id="contact-section" aria-labelledby="contact-heading">
       <header className={styles.begin}>
