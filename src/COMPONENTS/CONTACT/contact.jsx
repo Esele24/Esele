@@ -3,6 +3,10 @@ import { MapPin, Clock, Mail, Phone, Instagram } from "lucide-react";
 import { FaYoutube } from "react-icons/fa6";
 import { FaSpotify } from "react-icons/fa";
 import Link from "next/link";
+import React from 'react';
+// import { useForm, ValidationError } from '@formspree/react';
+// import { handleSubmit } from "@/lib/lib";
+
 const infoCards = [
   {
     title: "Meeting Location",
@@ -39,7 +43,13 @@ const infoCards = [
 ];
 
 export function Contact({}) {
+  // function ContactForm() {
+  // // const [state, handleSubmit] = useForm("xwprpeql");
+  // if (state.succeeded) {
+  //     return <p>Thanks for joining!</p>;
+  // }}
   return (
+    <>
     <section className={styles.contact} id="contact-section" aria-labelledby="contact-heading">
       <header className={styles.begin}>
         <div className={styles.top}>
@@ -57,7 +67,6 @@ export function Contact({}) {
       </header>
 
       <div className={styles.styles}>
-        {/* Form column */}
         <article className={styles.send} aria-labelledby="contact-form-title">
           <h3 id="contact-form-title" className={styles.message}>Send Us a Message</h3>
 
@@ -94,7 +103,18 @@ export function Contact({}) {
               <textarea id="message" name="message" className={styles.textarea} placeholder="  Tell us about yourself or any questions you might have..." required />
             </div>
 
-            <button className={styles.namesss} type="submit">Send Message</button>
+            {/* <ValidationError
+              prefix="Email"
+              field="email"
+              errors={state.errors} />
+            <textarea
+              id="message"
+              name="message" />
+            <ValidationError
+              prefix="Message"
+              field="message"
+              errors={state.errors} /> */}
+            <button className={styles.namesss} type="submit" >Send Message</button>
           </form>
         </article>
 
@@ -107,7 +127,7 @@ export function Contact({}) {
                 <div className={styles.icon}>
                   <Icon fill="navy" color="white" size={40} className={styles.op} />
                 </div>
-              
+
                 <div className={styles.texts}>
                   <div className={styles.label}><strong>{card.title}</strong></div>
                   <div className={styles.labels}>
@@ -145,6 +165,6 @@ export function Contact({}) {
           </div>
         </aside>
       </div>
-    </section>
+    </section></>
   );
 }

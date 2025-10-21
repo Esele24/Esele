@@ -68,7 +68,7 @@ const DOCTRINES = [
     ],
     scripture: "Acts 2:38, Romans 6:3-4, Colossians 2:12",
   },
-];
+]; 
 
 export function Doctrine() {
   return (

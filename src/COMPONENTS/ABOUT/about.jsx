@@ -24,7 +24,7 @@ export function About() {
         <div className={styles.bottom}>
           <div className={styles.mission}>
             <p className={styles.text}>
-              We are a diverse community of Topfaith yuniversity students united by our faith in Jesus Christ.
+              We are a diverse community of Topfaith University students united by our faith in Jesus Christ.
             </p>
 
             <p className={styles.mid}>
@@ -144,7 +144,7 @@ export function About() {
         </h4>
         <p>
             "We see a time when nobody would need to tell the students of
-            Topfaith University about Christ, because they will all know him
+            Topfaith University about Christ, because they will all know him,
             they will all pray to him, praise, and worship him"
         </p>
       </section>

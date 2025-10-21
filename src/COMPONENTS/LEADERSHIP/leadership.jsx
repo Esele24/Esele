@@ -53,7 +53,7 @@ const leaders = [
     imgAlt: "Godson O. Jacob",
   },
   {
-    name: "Emmanuel C. Egwu",
+    name: "Chibuikem E. Egwu",
     role: "Deputy Secratary General",
     degree: "LL.B Law (in view)",
     bioLines: [

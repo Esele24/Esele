@@ -8,8 +8,7 @@ export function Background (){
                               <motion.o
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
-        transition={{ delay: 0.8, duration: 2.0, ease: "easeOut" }} // delay for a stagger effect
-        className="mt-4 text-lg text-gray-600"
+        transition={{ delay: 0.1, duration: 0.5 , ease: "easeOut" }} // delay for a stagger effect
       >
                 Fellowship 
                    </motion.o>
@@ -17,8 +16,8 @@ export function Background (){
                      <motion.o
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
-        transition={{ delay: 0.8, duration: 2.0, ease: "easeOut"}} // delay for a stagger effect
-        className="mt-4 text-lg text-gray-600"
+        transition={{ delay: 0.1, duration: 0.5, ease: "easeOut"}} // delay for a stagger effect
+        transform={{scale:25}}
       >
                     & Faith 
                 </motion.o>
@@ -28,9 +27,9 @@ export function Background (){
                      <motion.o
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
-        transition={{ delay: 0.1, duration: 0.5, ease: "easeOut"}} // delay for a stagger effect
-        className="mt-4 text-lg text-gray-600"
+        transition={{ delay: 0.8, duration: 2.0, ease: "easeOut"}} // delay for a stagger effect
       >
+        
                 <p>
                     Join our vibrant community of faith where students gather to 
                 </p>
@@ -42,10 +41,15 @@ export function Background (){
                 </p>
                   </motion.o>
             </div>
-            
+             <motion.o
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ delay: 0.8, duration: 2.0, ease: "easeOut"}} // delay for a stagger effect
+      >
             <button className={styles.join}>
                 Join Our Community
             </button>
+            </motion.o>
         </div>
         </>
     )

@@ -155,9 +155,6 @@
     transition: transform 160ms ease, box-shadow 160ms ease;
   }
   
-  .item:hover {
-    transform: translateY(-4px);
-  }
   
   .icon {
     background-color: navy;
