@@ -47,7 +47,7 @@ export function Background (){
         transition={{ delay: 0.8, duration: 2.0, ease: "easeOut"}} // delay for a stagger effect
       >
             <button className={styles.join}>
-                Join Our Community
+                <a href="https://chat.whatsapp.com/Cjgh58V0BIZ8V18D5AOCUQ">Join Our Community</a>
             </button>
             </motion.o>
         </div>
