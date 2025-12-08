@@ -29,11 +29,11 @@ const DOCTRINES = [
     scripture: "Acts 1:8, Mark 1:8, Acts 2:4",
   },
   {
-    title: "SPEAKING IN TOUNGES",
+    title: "SPEAKING IN TONGUES",
     lines: [
-      `"We believe strongly in the gift of speaking in tounges as dispensed by the`,
+      `"We believe strongly in the gift of speaking in tongues as dispensed by the`,
       `Holy Spirit. We believe in extraordinary insight, wisdom and power`,
-      `building up as we pray in other tounges. We believe that tounges are`,
+      `building up as we pray in other tongues. We believe that tongues are`,
       `essential in the life of every believer for maximum impact."`,
     ],
     scripture: "Acts 2:4, 1st Corinthians 14:2,4, Mark 16:17",
