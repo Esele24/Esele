@@ -171,6 +171,9 @@ export function Events() {
           </div>
         </article>
       </div>
+      <div className={styles.container}>
+        <img src="WhatsApp Image 2025-12-05 at 19.07.06.jpeg"/>
+      </div>
     </section>
   );
 }

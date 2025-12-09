@@ -142,7 +142,15 @@
   font-size: 0.98rem;
   line-height: 1.35;
 }
-
+.container img{
+  position:fixed;
+  height:195px;
+  width:215px;
+  z-index: 1000;
+  top:65%;
+  left:20px;
+  border-radius: 5%;
+}
 /* SMALL SCREENS */
 @media (max-width: 900px) {
   .txt { font-size: 1.9rem; }
