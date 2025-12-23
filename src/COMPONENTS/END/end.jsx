@@ -43,7 +43,7 @@ export function End() {
 
       <div className={styles.under}></div>
       <div className={styles.line}>
-        &copy; 2025 Topfaith University Fellowship. All rights reserved. | Building community through faith
+        &copy; 2025 Topfaith University Fellowship. All rights reserved. | Building community through faith.
       </div>
     </footer>
   )

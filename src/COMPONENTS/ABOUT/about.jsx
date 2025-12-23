@@ -145,7 +145,7 @@ export function About() {
         <p>
             "We see a time when nobody would need to tell the students of
             Topfaith University about Christ, because they will all know him,
-            they will all pray to him, praise, and worship him"
+            they will all pray to him, praise, and worship him."
         </p>
       </section>
     </section>
