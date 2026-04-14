@@ -66,7 +66,7 @@ const leaders = [
     instaLabel: "chibuikem_egwu",
     phone: "08166636128",
     img: "/IMG-20250801-WA0174.jpg",
-    imgAlt: "Emmanuel C. Egwu",
+    imgAlt: "Chibuikem E. Egwu",
   },
   {
     name: "Precious I. Michael",
