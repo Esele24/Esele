@@ -1,167 +1,136 @@
-/* events.module.css - simple & responsive (local module) */
-
-.upcoming {
-  background-color: whitesmoke;
-  padding: 3.5rem 1rem;
-  box-sizing: border-box;
-  width: 100%;
-}
-
-.begin {
-  max-width: 1100px;
-  margin: 0 auto 0.75rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.top {
-  text-align: center;
-}
-
-/* keep your visual sizes but responsive */
-.txt {
-  font-size: 2.2rem;
-  margin: 0;
-  color: #000;
-  font-family: Georgia, 'Times New Roman', Times, serif;
-}
-
-.fell {
-  font-size: 2.4rem;
-  margin: 0.4rem 0 0;
-  color: rgb(100, 30, 167);
-  font-family: Georgia, 'Times New Roman', Times, serif;
-}
-
-/* mission paragraph */
-.bottom {
-  max-width: 1000px;
-  margin: 0.25rem auto 1.5rem;
-  text-align: center;
-}
-
-.mission {
-  font-size: 1.05rem;
-  color: rgb(100, 30, 167);
-  line-height: 1.45;
-  margin: 0;
-}
-
-/* EVENTS GRID ROWS */
-.weekly,
-.week {
-  max-width: 1100px;
-  margin: 1rem auto;
-  display: flex;
-  gap: 1rem;
-  flex-wrap: wrap; /* allows wrapping on small screens */
-  justify-content: center;
-  box-sizing: border-box;
-}
-
-/* single event card */
-.loop {
-  background-color: #ffffff;
-  border-radius: 8px;
-  padding: 1rem;
-  box-sizing: border-box;
-  flex: 1 1 calc(50% - 1rem);
-  min-width: 260px;
-  max-width: 540px;
-  transition: transform 180ms ease, box-shadow 180ms ease;
+.events {
+  padding: 6.5rem 1.5rem;
+  background: var(--p-50);
   display: flex;
   flex-direction: column;
-  gap: 0.5rem;
+  align-items: center;
+  gap: 4rem;
 }
 
-.loop:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 14px 30px rgba(0, 0, 0, 0.08);
-  cursor: pointer;
+/* ── Header ── */
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 1rem;
+  max-width: 700px;
 }
 
-/* decorative top accent bar variations */
-.topp,
-.toppp,
-.topppp,
-.toppppp {
-  height: 6px;
-  width: 100%;
-  border-radius: 6px;
-  margin-bottom: 8px;
-}
-
-/* keep your original color choices */
-.topp { background-color: blue; }
-.toppp { background-color: purple; }
-.topppp { background-color: orangered; }
-.toppppp { background-color: green; }
-
-/* meeting content */
-.meeting {
-  font-family: Georgia, 'Times New Roman', Times, serif;
-}
-
-.meeting h3 {
-  margin: 0 0 0.6rem 0;
-  font-size: 1.1rem;
+.label {
+  display: inline-block;
+  padding: 0.35rem 1.1rem;
+  background: var(--p-100);
+  color: var(--p-600);
+  border-radius: var(--r-full);
+  font-size: 0.72rem;
   font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
 }
 
-/* detail rows (icon + text) */
+.title {
+  font-family: var(--font-heading);
+  font-size: clamp(2.1rem, 5vw, 3.2rem);
+  font-weight: 700;
+  color: var(--n-900);
+  line-height: 1.15;
+}
+
+.accent {
+  color: var(--p-600);
+}
+
+.intro {
+  font-size: 1.05rem;
+  color: var(--n-500);
+  line-height: 1.85;
+  max-width: 580px;
+}
+
+/* ── Cards grid ── */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+  width: 100%;
+  max-width: 1100px;
+}
+
+.card {
+  background: var(--white);
+  border-radius: var(--r-md);
+  overflow: hidden;
+  box-shadow: var(--shadow-md);
+  border: 1px solid var(--p-100);
+  transition: box-shadow var(--t-base);
+  cursor: default;
+  display: flex;
+  flex-direction: column;
+}
+
+.card:hover {
+  box-shadow: var(--shadow-lg);
+}
+
+.cardTop {
+  height: 5px;
+  flex-shrink: 0;
+}
+
+.cardBody {
+  padding: 1.75rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.1rem;
+  flex: 1;
+}
+
+.cardTitle {
+  font-family: var(--font-heading);
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--n-800);
+}
+
+/* ── Detail rows ── */
 .details {
   list-style: none;
-  padding: 0;
-  margin: 0;
-  margin-top:10px;
   display: flex;
   flex-direction: column;
   gap: 0.6rem;
 }
 
-.first {
+.detail {
   display: flex;
-  gap: 0.6rem;
+  align-items: center;
+  gap: 0.7rem;
+  font-size: 0.88rem;
+  color: var(--n-600);
+}
+
+.detailIcon {
+  color: var(--p-500);
+  flex-shrink: 0;
+  display: flex;
   align-items: center;
 }
 
-.first span {
-  color: navy;
-  font-weight: 600;
+.description {
+  font-size: 0.875rem;
+  color: var(--n-500);
+  line-height: 1.72;
+  padding-top: 0.75rem;
+  border-top: 1px solid var(--n-200);
+  margin-top: auto;
 }
 
-/* footer text */
-.footer {
-  margin-top: 0.75rem;
+/* ── Responsive ── */
+@media (max-width: 768px) {
+  .grid { grid-template-columns: 1fr; }
 }
 
-.footer p {
-  margin: 0;
-  color: navy;
-  font-size: 0.98rem;
-  line-height: 1.35;
-}
-.container img{
-  position:fixed;
-  height:195px;
-  width:215px;
-  z-index: 1000;
-  top:65%;
-  left:20px;
-  border-radius: 5%;
-}
-/* SMALL SCREENS */
-@media (max-width: 900px) {
-  .txt { font-size: 1.9rem; }
-  .fell { font-size: 2rem; }
-  .loop { flex: 1 1 100%; max-width: 100%; }
-  .topp, .toppp, .topppp, .toppppp { height: 5px; }
-}
-
-@media (max-width: 480px) {
-  .mission { font-size: 0.98rem; }
-  .first span { font-size: 0.95rem; }
-  .meeting h3 { font-size: 1rem; }
-  .upcoming { padding: 2rem 0.75rem; }
+@media (max-width: 640px) {
+  .events { padding: 4rem 1rem; gap: 3rem; }
+  .cardBody { padding: 1.4rem; }
 }

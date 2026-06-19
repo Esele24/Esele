@@ -1,243 +1,222 @@
-.imageBackground {
-    background: url(/gathering.jpg);
-    height: 100vh;
+.hero {
+  position: relative;
+  height: 100vh;
+  min-height: 640px;
+  width: 100%;
+  background: url('/gathering.jpg') center / cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+/* Dark gradient overlay with purple tint */
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    150deg,
+    rgba(10, 2, 24, 0.92) 0%,
+    rgba(76, 29, 149, 0.72) 55%,
+    rgba(10, 2, 24, 0.88) 100%
+  );
+  z-index: 1;
+}
+
+/* Animated ambient orbs */
+.orb1,
+.orb2,
+.orb3 {
+  position: absolute;
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.orb1 {
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(circle, rgba(124, 58, 237, 0.28) 0%, transparent 68%);
+  top: -18%;
+  left: -12%;
+  animation: orbDrift 12s ease-in-out infinite;
+}
+
+.orb2 {
+  width: 480px;
+  height: 480px;
+  background: radial-gradient(circle, rgba(245, 158, 11, 0.22) 0%, transparent 68%);
+  bottom: -12%;
+  right: -10%;
+  animation: orbDrift 14s ease-in-out infinite reverse;
+}
+
+.orb3 {
+  width: 360px;
+  height: 360px;
+  background: radial-gradient(circle, rgba(139, 92, 246, 0.18) 0%, transparent 68%);
+  top: 35%;
+  left: 38%;
+  animation: orbDrift 9s ease-in-out infinite 3s;
+}
+
+@keyframes orbDrift {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  33%       { transform: translate(28px, -22px) scale(1.06); }
+  66%       { transform: translate(-18px, 16px) scale(0.96); }
+}
+
+/* Main content */
+.content {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 6rem 1.5rem 2rem;
+  max-width: 880px;
+  gap: 1.6rem;
+}
+
+/* Top badge chip */
+.badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.45rem 1.2rem;
+  background: rgba(245, 158, 11, 0.14);
+  border: 1px solid rgba(245, 158, 11, 0.38);
+  border-radius: var(--r-full);
+  color: var(--g-300);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+/* Main heading */
+.title {
+  font-family: var(--font-heading);
+  font-size: clamp(3.5rem, 9vw, 7.5rem);
+  font-weight: 800;
+  color: #fff;
+  line-height: 1.03;
+  letter-spacing: -0.03em;
+}
+
+/* Gold shimmer accent */
+.accent {
+  background: linear-gradient(135deg, var(--g-500) 0%, var(--g-300) 50%, var(--g-500) 100%);
+  background-size: 250% 250%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: shimmer 5s linear infinite;
+}
+
+@keyframes shimmer {
+  0%   { background-position: 0% 50%; }
+  100% { background-position: 250% 50%; }
+}
+
+/* Subtitle */
+.subtitle {
+  font-size: clamp(1rem, 2.4vw, 1.2rem);
+  color: rgba(255, 255, 255, 0.8);
+  line-height: 1.9;
+  max-width: 600px;
+  font-weight: 300;
+}
+
+/* CTA buttons */
+.actions {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.primaryBtn {
+  display: inline-block;
+  padding: 0.95rem 2.6rem;
+  background: linear-gradient(135deg, var(--g-500), var(--g-600));
+  color: var(--p-950);
+  font-weight: 700;
+  font-size: 0.95rem;
+  border-radius: var(--r-full);
+  letter-spacing: 0.025em;
+  box-shadow: var(--shadow-gold);
+  transition: transform var(--t-base), box-shadow var(--t-base), filter var(--t-base);
+}
+
+.primaryBtn:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 45px rgba(245, 158, 11, 0.55);
+  filter: brightness(1.08);
+}
+
+.secondaryBtn {
+  display: inline-block;
+  padding: 0.95rem 2.6rem;
+  border: 2px solid rgba(255, 255, 255, 0.42);
+  color: #fff;
+  font-weight: 600;
+  font-size: 0.95rem;
+  border-radius: var(--r-full);
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  transition: background var(--t-base), border-color var(--t-base), transform var(--t-base);
+}
+
+.secondaryBtn:hover {
+  background: rgba(255, 255, 255, 0.18);
+  border-color: rgba(255, 255, 255, 0.75);
+  transform: translateY(-4px);
+}
+
+/* Scroll indicator */
+.scrollHint {
+  position: absolute;
+  bottom: 2.2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.scrollLine {
+  width: 1.5px;
+  height: 48px;
+  background: linear-gradient(to bottom, transparent, rgba(255, 255, 255, 0.55));
+  border-radius: var(--r-full);
+}
+
+.scrollLabel {
+  font-size: 0.62rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.45);
+}
+
+/* Responsive */
+@media (max-width: 640px) {
+  .hero { min-height: 100svh; }
+  .content { gap: 1.25rem; }
+  .actions { flex-direction: column; align-items: center; }
+  .primaryBtn, .secondaryBtn {
     width: 100%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    max-width: 300px;
     text-align: center;
-    position: relative;
-    padding: 0 1.5rem;
+  }
+  .scrollHint { display: none; }
+  .orb1, .orb2, .orb3 { opacity: 0.5; }
 }
 
-/* Add a subtle overlay for readability */
-.imageBackground::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: rgba(0, 0, 0, 0.45);
-    z-index: 1;
-}
-
-.faithMessage {
-    font-size: clamp(2rem, 5vw, 3rem); /* Responsive font size */
-    font-weight: 700;
-    color: #fff;
-    text-shadow: 0 4px 12px rgba(0,0,0,0.6);
-    margin-bottom: 1rem;
-    position: relative;
-    z-index: 2;
-    display: flex;
-    flex-wrap: wrap; /* Allow text to wrap on small screens */
-    justify-content: center;
-    align-items: center;
-    gap: 9px;
-    width: 100%;
-}
-
-.faithMessage .bottom {
-    color: #fbbf24;
-}
-
-.herotext {
-    font-size: clamp(1rem, 2.5vw, 1.25rem); /* Responsive font size */
-    line-height: 1.7;
-    color: #e5e5e5;
-    max-width: min(700px, 90vw); /* Responsive max-width */
-    margin: 0 auto 2rem;
-    position: relative;
-    z-index: 2;
-    padding: 0 1rem;
-}
-
-.join {
-    background: #fbbf24;
-    color: #111;
-    font-size: clamp(0.9rem, 2vw, 1.1rem);
-    font-weight: 600;
-    padding: clamp(0.6rem, 2vw, 0.8rem) clamp(1.5rem, 4vw, 2rem);
-    border-radius: 999px;
-    border: none;
-    cursor: pointer;
-    position: relative;
-    z-index: 2;
-    transition: all 0.3s ease;
-    min-height: 44px; /* Better touch target for mobile */
-}
-
-.join:hover {
-    background: #d97706;
-    color: #fff;
-}
-
-.join a {
-    text-decoration: none;
-    color: inherit;
-    display: inline-block;
-    width: 100%;
-    height: 100%;
-}
-
-/* Media Queries for specific breakpoints */
-
-/* Large tablets and small desktops */
-@media screen and (max-width: 1024px) {
-    .imageBackground {
-        height: 90vh;
-    }
-    
-    .faithMessage {
-        font-size: 2.5rem;
-        gap: 8px;
-    }
-}
-
-/* Tablets */
-@media screen and (max-width: 768px) {
-    .imageBackground {
-        height: 85vh;
-        padding: 0 1rem;
-    }
-    
-    .faithMessage {
-        font-size: 2rem;
-        gap: 6px;
-        flex-direction: row;
-        flex-wrap: wrap;
-    }
-    
-    .herotext {
-        font-size: 1.1rem;
-        line-height: 1.6;
-        margin-bottom: 1.5rem;
-        padding: 0 0.5rem;
-    }
-    
-    .join {
-        padding: 0.7rem 1.8rem;
-    }
-}
-
-/* Large phones */
-@media screen and (max-width: 480px) {
-    .imageBackground {
-        height: 80vh;
-        padding: 0 0.75rem;
-    }
-    
-    .faithMessage {
-        font-size: 1.8rem;
-        gap: 4px;
-        margin-bottom: 0.75rem;
-        flex-direction: row;
-        flex-wrap: wrap;
-    }
-    
-    .faithMessage span {
-        display: inline-block;
-    }
-    
-    .herotext {
-        font-size: 1rem;
-        line-height: 1.5;
-        margin-bottom: 1.25rem;
-        padding: 0 0.25rem;
-    }
-    
-    .join {
-        padding: 0.65rem 1.5rem;
-        min-height: 40px;
-    }
-}
-
-/* Extra small phones */
-@media screen and (max-width: 360px) {
-    .imageBackground {
-        height: 75vh;
-        padding: 0 0.5rem;
-    }
-    
-    .faithMessage {
-        font-size: 1.5rem;
-        gap: 3px;
-    }
-    
-    .herotext {
-        font-size: 0.9rem;
-        line-height: 1.4;
-        margin-bottom: 1rem;
-    }
-    
-    .join {
-        padding: 0.6rem 1.2rem;
-        font-size: 0.85rem;
-    }
-}
-
-/* Landscape orientation for phones */
-@media screen and (max-height: 600px) and (orientation: landscape) {
-    .imageBackground {
-        height: auto;
-        min-height: 100vh;
-        padding: 2rem 1rem;
-    }
-    
-    .faithMessage {
-        font-size: 1.8rem;
-        margin-bottom: 0.5rem;
-    }
-    
-    .herotext {
-        font-size: 0.9rem;
-        margin-bottom: 1rem;
-        max-width: 600px;
-    }
-}
-
-/* Extra large screens (4K and above) */
-@media screen and (min-width: 2000px) {
-    .imageBackground {
-        padding: 0 3rem;
-    }
-    
-    .faithMessage {
-        font-size: 4rem;
-        gap: 12px;
-    }
-    
-    .herotext {
-        font-size: 1.5rem;
-        max-width: 900px;
-        line-height: 1.8;
-    }
-    
-    .join {
-        font-size: 1.3rem;
-        padding: 1rem 2.5rem;
-    }
-}
-
-/* High DPI screens */
-@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
-    .imageBackground {
-        background-image: url(/gathering.jpg); /* You might want a 2x version here */
-    }
-}
-
-/* Reduced motion for accessibility */
 @media (prefers-reduced-motion: reduce) {
-    .join {
-        transition: none;
-    }
-}
-
-/* Dark mode adjustments */
-@media (prefers-color-scheme: dark) {
-    .imageBackground::before {
-        background: rgba(0, 0, 0, 0.55); /* Slightly darker overlay for dark mode */
-    }
+  .orb1, .orb2, .orb3 { animation: none; }
+  .accent { animation: none; }
 }

@@ -1,148 +1,187 @@
+.section {
+  padding: 6.5rem 1.5rem;
+  background: var(--white);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4rem;
+}
 
-.leadership {
-    width: 100%;
-    padding: 3.5rem 1rem;
-    box-sizing: border-box;
-    background: #fff;
-  }
-  
-  .header {
-    max-width: 1100px;
-    margin: 0 auto 1rem;
-    text-align: center;
-  }
-  
-  .sectionTitle {
-    font-size: 2.2rem;
-    margin: 0;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-  }
-  
-  .sectionSubtitle {
-    font-size: 2.4rem;
-    margin: 0.3rem 0 0;
-    color: rgb(100, 30, 167);
-    font-family: Georgia, 'Times New Roman', Times, serif;
-  }
-  
-  .intro {
-    max-width: 900px;
-    margin: 0.6rem auto 0;
-    color: rgb(100, 30, 167);
-    font-size: 1.05rem;
-    line-height: 1.4;
-  }
-  
-  /* grid of leader cards */
-  .list {
-    max-width: 1100px;
-    margin: 1.5rem auto;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 1rem;
-    box-sizing: border-box;
-  }
-  
-  /* card */
-  .card {
-    background: #fff;
-    border-radius: 10px;
-    padding: 1rem;
-    box-shadow: 0 8px 20px rgba(0,0,0,0.05);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    transition: transform .18s ease, box-shadow .18s ease;
-    min-height: 360px;
-  }
-  
-  .card:hover {
-    transform: translateY(-6px);
-    box-shadow: 0 18px 40px rgba(0,0,0,0.08);
-  }
-  
-  /* avatar */
-  .avatar {
-    width: 140px;
-    height: 140px;
-    border-radius: 50%;
-    overflow: hidden;
-    background: rgb(100, 30, 167);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 0.6rem;
-  }
-  
-  .avatarImg {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
-  }
-  
-  /* info */
-  .info {
-    text-align: center;
-    width: 100%;
-  }
-  
-  .name {
-    margin: 0.2rem 0;
-    font-size: 1.05rem;
-    font-weight: 700;
-  }
-  
-  .role {
-    margin: 0;
-    color: rgb(100, 30, 167);
-    font-weight: 600;
-  }
-  
-  .degree {
-    margin: 0.2rem 0 0.6rem;
-    color: rgb(139, 77, 196);
-    font-weight: 600;
-  }
-  
-  /* bio */
-  .bio p {
-    margin: 0;
-    color: rgb(100, 30, 167);
-    font-size: 0.95rem;
-    line-height: 1.35;
-  }
-  
-  /* contact block (stack vertically) */
-  .contact {
-    margin-top: 0.8rem;
-    display: flex;
-    flex-direction: column;
-    gap: 0.45rem;
-    align-items: center;
-  }
-  
-  .contactLink {
-    display: inline-flex;
-    gap: 0.5rem;
-    align-items: center;
-    color: navy;
-    text-decoration: none;
-    font-weight: 600;
-    font-size: 0.98rem;
-  }
-  
-  /* responsive */
-  @media (max-width: 980px) {
-    .list { grid-template-columns: repeat(2, 1fr); }
-    .avatar { width: 120px; height: 120px; }
-  }
-  
-  @media (max-width: 560px) {
-    .list { grid-template-columns: 1fr; }
-    .avatar { width: 100px; height: 100px; }
-    .sectionTitle { font-size: 1.8rem; }
-    .sectionSubtitle { font-size: 2rem; }
-    .intro { font-size: 1rem; }
-  }
-  
+/* ── Header ── */
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 1rem;
+  max-width: 700px;
+}
+
+.label {
+  display: inline-block;
+  padding: 0.35rem 1.1rem;
+  background: var(--p-100);
+  color: var(--p-600);
+  border-radius: var(--r-full);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.title {
+  font-family: var(--font-heading);
+  font-size: clamp(2.1rem, 5vw, 3.2rem);
+  font-weight: 700;
+  color: var(--n-900);
+  line-height: 1.15;
+}
+
+.accent {
+  color: var(--p-600);
+}
+
+.intro {
+  font-size: 1.05rem;
+  color: var(--n-500);
+  line-height: 1.85;
+  max-width: 620px;
+}
+
+/* ── Card grid ── */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.75rem;
+  width: 100%;
+  max-width: 1100px;
+}
+
+/* ── Individual card ── */
+.card {
+  background: var(--white);
+  border: 1px solid var(--p-100);
+  border-radius: var(--r-md);
+  overflow: hidden;
+  box-shadow: var(--shadow-md);
+  transition: box-shadow var(--t-base);
+  display: flex;
+  flex-direction: column;
+  cursor: default;
+}
+
+.card:hover {
+  box-shadow: var(--shadow-lg);
+}
+
+/* Photo area */
+.photoWrap {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+  background: var(--p-100);
+}
+
+.photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+  transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  display: block;
+}
+
+.card:hover .photo {
+  transform: scale(1.06);
+}
+
+.photoOverlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom, transparent 55%, rgba(76, 29, 149, 0.15) 100%);
+}
+
+/* Info */
+.info {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+  flex: 1;
+}
+
+.name {
+  font-family: var(--font-heading);
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--n-900);
+  margin: 0;
+}
+
+.role {
+  display: inline-block;
+  padding: 0.22rem 0.8rem;
+  background: var(--p-100);
+  color: var(--p-700);
+  border-radius: var(--r-full);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  width: fit-content;
+}
+
+.degree {
+  font-size: 0.8rem;
+  color: var(--n-400);
+  font-style: italic;
+}
+
+.bio {
+  font-size: 0.875rem;
+  color: var(--n-600);
+  line-height: 1.65;
+  margin-top: 0.25rem;
+}
+
+/* Contact links */
+.contacts {
+  margin-top: auto;
+  padding-top: 1rem;
+  border-top: 1px solid var(--p-100);
+  display: flex;
+  flex-direction: column;
+  gap: 0.42rem;
+}
+
+.contactLink {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.78rem;
+  color: var(--p-600);
+  transition: color var(--t-fast);
+  overflow: hidden;
+}
+
+.contactLink:hover {
+  color: var(--p-400);
+}
+
+.contactLink span {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/* ── Responsive ── */
+@media (max-width: 1024px) {
+  .grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 640px) {
+  .section { padding: 4rem 1rem; gap: 3rem; }
+  .grid { grid-template-columns: 1fr; }
+  .info { padding: 1.25rem; }
+}
