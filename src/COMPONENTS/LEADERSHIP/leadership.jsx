@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 
 const leaders = [
   {
-    name: "Esele E. Okogbo",
+    name: "Okogbo, Esele Emmanuel",
     role: "President",
     degree: "B.Sc Software Engineering (in view)",
     bio: "Passionate about creating inclusive spaces for spiritual growth and community building.",
@@ -16,18 +16,22 @@ const leaders = [
     img: "/IMG-20250312-WA0069.jpg",
   },
   {
-    name: "Precious N. Onah",
+    name: "Ike, Isabel Amarachi",
     role: "Vice President",
     degree: "LL.B Law (in view)",
     bio: "Dedicated to helping students discover their purpose through faith and fellowship.",
-    email: "202100062@topfaith.edu.ng",
-    insta: "https://instagram.com/omo_baba17",
-    instaLabel: "omo_baba17",
-    phone: "08142302738",
-    img: "/IMG-20250823-WA0180.jpg",
+    email: "202300045@topfaith.edu.ng",
+    insta: "https://instagram.com/ikeisabelamarachi",
+    instaLabel: "ikeisabelamarachi",
+    phone: "09059291864",
+    img: "/IMG-20260620-WA0052.jpg",
+    // Crop to keep Isabel in frame and push the other person out of the circle.
+    // Tweak: scale zooms in; objectPosition shifts which part stays visible
+    // (e.g. "30% 25%" = show the left side; "70% 25%" = show the right side).
+    // mediaFocus: { scale: 1.32, objectPosition: "50% 25%" },
   },
   {
-    name: "Godson O. Jacob",
+    name: "Jacob, Godson Okon",
     role: "Secretary General",
     degree: "LL.B Law (in view)",
     bio: "Dedicated to grooming students' spiritual life through discipleship, mentorship and fellowship.",
@@ -38,7 +42,7 @@ const leaders = [
     img: "/IMG-20250801-WA0181.jpg",
   },
   {
-    name: "Chibuikem E. Egwu",
+    name: "Egwu, Chibuikem Emmanuel",
     role: "Deputy Secretary General",
     degree: "LL.B Law (in view)",
     bio: "Passionate about souls, prayer, worship, word study, and creating an enabling environment for people to grow in the faith.",
@@ -49,7 +53,7 @@ const leaders = [
     img: "/IMG-20250801-WA0174.jpg",
   },
   {
-    name: "Precious I. Michael",
+    name: "Michael, Precious Idara",
     role: "Treasurer",
     degree: "LL.B Law (in view)",
     bio: "Keeping financial records safe, secure, and fostering accountability within the fellowship.",
@@ -60,7 +64,7 @@ const leaders = [
     img: "/IMG-20250803-WA0154(1).jpg",
   },
   {
-    name: "Success G. Patrick",
+    name: "Patrick, Success Godswill",
     role: "Public Relations Officer",
     degree: "LL.B Law (in view)",
     bio: "Ensuring healthy PR between fellowship, its members, the school, friends, families, and the world at large.",
@@ -69,6 +73,17 @@ const leaders = [
     instaLabel: "_s.u.x.y_",
     phone: "07050377172",
     img: "/IMG-20250819-WA0250.jpg",
+  },
+  {
+    name: "Udok, Hope Imeh",
+    role: "Welface Co-ordinator",
+    degree: "LL.B Law (in view)",
+    bio: "Dedicated to promoting the well-being and welfare of fellow students.",
+    email: "202200048@topfaith.edu.ng",
+    insta: "https://instagram.com/affiliatewithhope",
+    instaLabel: "affiliatewithhope",
+    phone: "09064922353",
+    img: "",
   },
 ];
 
@@ -85,6 +100,33 @@ const stagger = {
   visible: { transition: { staggerChildren: 0.1 } },
 };
 
+// Renders a looping muted video for video files, otherwise an image.
+// `focus` optionally crops the media via { scale, objectPosition }.
+function Media({ src, alt, className, focus }) {
+  const isVideo = /\.(mp4|webm|mov|ogg)$/i.test(src);
+  const style = focus
+    ? {
+        transform: focus.scale ? `scale(${focus.scale})` : undefined,
+        objectPosition: focus.objectPosition,
+      }
+    : undefined;
+  if (isVideo) {
+    return (
+      <video
+        className={className}
+        src={src}
+        style={style}
+        autoPlay
+        muted
+        loop
+        playsInline
+        aria-label={alt}
+      />
+    );
+  }
+  return <img src={src} alt={alt} className={className} style={style} />;
+}
+
 function LeaderCard({ person }) {
   return (
     <motion.article
@@ -93,10 +135,11 @@ function LeaderCard({ person }) {
       whileHover={{ y: -6, transition: { duration: 0.22 } }}
     >
       <div className={styles.photoWrap}>
-        <img
+        <Media
           src={person.img}
           alt={person.name}
           className={styles.photo}
+          focus={person.mediaFocus}
         />
         <div className={styles.photoOverlay} />
       </div>

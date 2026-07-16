@@ -35,7 +35,7 @@ const INFO_CARDS = [
     title: "Call Us",
     lines: [
       "President: 09036669156",
-      "Vice President: 08142302738",
+      "Vice President: 09059291864",
       "Secretary General: 08062169811",
     ],
   },
