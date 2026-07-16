@@ -1,5 +1,6 @@
 "use client";
 import styles from "./leadership.module.css";
+import Image from "next/image";
 import { Mail, Instagram, Phone } from "lucide-react";
 import { motion } from "framer-motion";
 
@@ -19,7 +20,7 @@ const leaders = [
     name: "Ike, Isabel Amarachi",
     role: "Vice President",
     degree: "LL.B Law (in view)",
-    bio: "Dedicated to helping students discover their purpose through faith and fellowship.",
+    bio: "Dedicated to helping students discover their purpose and calling through intimacy with God.",
     email: "202300045@topfaith.edu.ng",
     insta: "https://instagram.com/ikeisabelamarachi",
     instaLabel: "ikeisabelamarachi",
@@ -104,10 +105,12 @@ function LeaderCard({ person }) {
       whileHover={{ y: -6, transition: { duration: 0.22 } }}
     >
       <div className={styles.photoWrap}>
-        <img
+        <Image
           src={person.img}
           alt={person.name}
           className={styles.photo}
+          fill
+          sizes="160px"
         />
         <div className={styles.photoOverlay} />
       </div>
