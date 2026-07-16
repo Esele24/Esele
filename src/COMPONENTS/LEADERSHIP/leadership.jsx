@@ -25,10 +25,6 @@ const leaders = [
     instaLabel: "ikeisabelamarachi",
     phone: "09059291864",
     img: "/IMG-20260620-WA0052.jpg",
-    // Crop to keep Isabel in frame and push the other person out of the circle.
-    // Tweak: scale zooms in; objectPosition shifts which part stays visible
-    // (e.g. "30% 25%" = show the left side; "70% 25%" = show the right side).
-    // mediaFocus: { scale: 1.32, objectPosition: "50% 25%" },
   },
   {
     name: "Jacob, Godson Okon",
@@ -76,14 +72,14 @@ const leaders = [
   },
   {
     name: "Udok, Hope Imeh",
-    role: "Welface Co-ordinator",
+    role: "Welfare Co-ordinator",
     degree: "LL.B Law (in view)",
     bio: "Dedicated to promoting the well-being and welfare of fellow students.",
     email: "202200048@topfaith.edu.ng",
     insta: "https://instagram.com/affiliatewithhope",
     instaLabel: "affiliatewithhope",
     phone: "09064922353",
-    img: "",
+    img: "/WhatsApp Image 2026-07-16 at 15.57.25.jpeg",
   },
 ];
 
@@ -100,33 +96,6 @@ const stagger = {
   visible: { transition: { staggerChildren: 0.1 } },
 };
 
-// Renders a looping muted video for video files, otherwise an image.
-// `focus` optionally crops the media via { scale, objectPosition }.
-function Media({ src, alt, className, focus }) {
-  const isVideo = /\.(mp4|webm|mov|ogg)$/i.test(src);
-  const style = focus
-    ? {
-        transform: focus.scale ? `scale(${focus.scale})` : undefined,
-        objectPosition: focus.objectPosition,
-      }
-    : undefined;
-  if (isVideo) {
-    return (
-      <video
-        className={className}
-        src={src}
-        style={style}
-        autoPlay
-        muted
-        loop
-        playsInline
-        aria-label={alt}
-      />
-    );
-  }
-  return <img src={src} alt={alt} className={className} style={style} />;
-}
-
 function LeaderCard({ person }) {
   return (
     <motion.article
@@ -135,11 +104,10 @@ function LeaderCard({ person }) {
       whileHover={{ y: -6, transition: { duration: 0.22 } }}
     >
       <div className={styles.photoWrap}>
-        <Media
+        <img
           src={person.img}
           alt={person.name}
           className={styles.photo}
-          focus={person.mediaFocus}
         />
         <div className={styles.photoOverlay} />
       </div>
